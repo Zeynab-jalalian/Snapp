@@ -1,0 +1,9 @@
+@mixin flex($j,$a){
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+}
+@mixin w_h($w,$h){
+  width: $w;
+  height: $h;
+}
