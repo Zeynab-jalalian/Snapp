@@ -1,0 +1,27 @@
+header {
+  padding: 2%;
+  width: 100%;
+  @include flex(start, center);
+  border-bottom: 1px solid #eee;
+  .logo {
+    @include flex(center, center);
+    cursor: pointer;
+  }
+  ul {
+    @include flex(center, center);
+    margin-right: 25px;
+    li {
+      a {
+        color: $header;
+        font-weight: 400;
+        i {
+          font-size: 0.9rem;
+          margin-right: 2px;
+        }
+      }
+      @include flex(center, center);
+      margin: 0 15px;
+      font-size: 1.4rem;
+    }
+  }
+}
