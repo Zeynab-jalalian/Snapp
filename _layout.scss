@@ -1,4 +1,8 @@
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 2%;
   width: 100%;
   @include flex(start, center);
@@ -22,6 +26,9 @@ header {
     cursor: pointer;
   }
   ul {
+    .close-btn{
+      display: none;
+    }
     @include flex(center, center);
     margin-right: 25px;
     li {

@@ -22,6 +22,10 @@ a {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 2%;
   width: 100%;
   display: flex;
@@ -54,6 +58,9 @@ header ul {
   justify-content: center;
   align-items: center;
   margin-right: 25px;
+}
+header ul .close-btn {
+  display: none;
 }
 header ul li {
   display: flex;
@@ -89,8 +96,45 @@ header ul li a i {
     order: 2;
   }
   .menu-ul {
-    display: none;
-    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #fff;
+    z-index: 999;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    transition: right 0.3s ease-in-out;
+    justify-content: start;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 1 !important;
+  }
+  .menu-ul li {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+  }
+  .menu-ul li a {
+    font-size: 1.3rem;
+  }
+  .menu-ul li a i {
+    position: absolute;
+    left: 20px;
+  }
+  .menu-ul.active {
+    right: 0 !important;
+  }
+  .menu-ul .close-btn {
+    display: block;
+    align-self: flex-start;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .menu-ul .close-btn i {
+    font-size: 1.5rem;
+    color: #333;
   }
 }
 
