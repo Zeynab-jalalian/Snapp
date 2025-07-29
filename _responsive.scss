@@ -36,10 +36,20 @@
     justify-content: start;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     opacity: 1 !important;
-
+    .list-after::after {
+      content: "(سواری، موتور و وانت)";
+      font-size: 1.3remrem;
+      color: $snapp-green;
+      margin-right: 5px;
+      cursor: pointer;
+    }
     li {
       margin-bottom: 40px;
       font-size: 1.2rem;
+
+      .a-green {
+        color: $snapp-green;
+      }
 
       a {
         font-size: 1.3rem;
@@ -51,7 +61,7 @@
     }
 
     &.active {
-      right: 0 !important;
+      right: -30px !important;
     }
   }
 

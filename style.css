@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap");
 * {
   margin: 0;
@@ -112,9 +113,19 @@ header ul li a i {
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     opacity: 1 !important;
   }
+  .menu-ul .list-after::after {
+    content: "(سواری، موتور و وانت)";
+    font-size: 1.3remrem;
+    color: #26bb26;
+    margin-right: 5px;
+    cursor: pointer;
+  }
   .menu-ul li {
     margin-bottom: 40px;
     font-size: 1.2rem;
+  }
+  .menu-ul li .a-green {
+    color: #26bb26;
   }
   .menu-ul li a {
     font-size: 1.3rem;
@@ -124,7 +135,7 @@ header ul li a i {
     left: 20px;
   }
   .menu-ul.active {
-    right: 0 !important;
+    right: -30px !important;
   }
   .menu-ul .close-btn {
     display: block;
