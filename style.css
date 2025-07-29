@@ -29,6 +29,20 @@ header {
   align-items: center;
   border-bottom: 1px solid #eee;
 }
+header .menu-toggle {
+  display: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+header .menu-toggle:hover {
+  background: rgba(223, 223, 223, 0.7803921569);
+}
+header .menu-toggle i {
+  color: #26bb26;
+  font-size: 1.2rem;
+}
 header .logo {
   display: flex;
   justify-content: center;

@@ -3,6 +3,20 @@ header {
   width: 100%;
   @include flex(start, center);
   border-bottom: 1px solid #eee;
+  .menu-toggle {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      background: #dfdfdfc7;
+    }
+    i {
+      color: $snapp-green;
+      font-size: 1.2rem;
+    }
+  }
   .logo {
     @include flex(center, center);
     cursor: pointer;
