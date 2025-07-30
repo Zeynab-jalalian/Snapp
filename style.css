@@ -236,6 +236,9 @@ header ul li a i {
     height: 100%;
     display: none;
   }
+  .home .home-right form {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
