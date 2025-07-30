@@ -3,7 +3,7 @@
     justify-content: $j;
     align-items: $a;
 }
-@mixin w_h($w,$h){
-  width: $w;
-  height: $h;
+@mixin grid($num1,$num2){
+ display: grid;
+ grid-template-columns: repeat($num1,$num2);
 }
