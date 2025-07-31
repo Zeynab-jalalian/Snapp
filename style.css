@@ -194,7 +194,7 @@ header ul li a i {
   object-fit: cover;
 }
 .apps .app-boxes {
-  padding: 2%;
+  padding: 0 10%;
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -221,6 +221,9 @@ header ul li a i {
 @media (max-width: 1024px) {
   header ul li {
     font-size: 1.2rem;
+  }
+  .app-boxes {
+    padding: 2%;
   }
 }
 @media (max-width: 1000px) {
