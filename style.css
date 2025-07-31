@@ -180,6 +180,44 @@ header ul li a i {
   border-radius: 10px;
 }
 
+.apps h1 {
+  text-align: center;
+}
+.apps .div-img {
+  width: 70px;
+  height: 70px;
+  margin-left: 5px;
+}
+.apps .div-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.apps .app-boxes {
+  padding: 0 15%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.apps .app-boxes .app-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 33.3333333%;
+  gap: 10px;
+  margin: 20px auto;
+}
+.apps .app-boxes .app-box div h4 {
+  font-size: 1.3rem;
+}
+.apps .app-boxes .app-box div p {
+  font-size: 1.2rem;
+  color: gray;
+  font-weight: 500;
+}
+
 @media (max-width: 1024px) {
   header ul li {
     font-size: 1.2rem;
