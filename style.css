@@ -194,7 +194,7 @@ header ul li a i {
   object-fit: cover;
 }
 .apps .app-boxes {
-  padding: 0 15%;
+  padding: 2%;
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -210,10 +210,10 @@ header ul li a i {
   margin: 20px auto;
 }
 .apps .app-boxes .app-box div h4 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .apps .app-boxes .app-box div p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: gray;
   font-weight: 500;
 }
@@ -221,6 +221,14 @@ header ul li a i {
 @media (max-width: 1024px) {
   header ul li {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .app-box {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px auto;
   }
 }
 @media (max-width: 870px) {
@@ -297,6 +305,20 @@ header ul li a i {
   }
   .home .home-right form {
     display: none;
+  }
+}
+@media (max-width: 840px) {
+  .app-box div p {
+    display: none;
+  }
+  .app-box .div-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 368px) {
+  .app-box {
+    width: 50% !important;
   }
 }
 

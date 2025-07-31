@@ -162,7 +162,7 @@ header {
     }
   }
   .app-boxes {
-    padding: 0 15%;
+    padding: 2%;
     margin-top: 50px;
     @include flex(center,center);
     flex-wrap: wrap;
@@ -174,10 +174,10 @@ header {
 
       div {
         h4 {
-          font-size: 1.3rem;
+          font-size: 1.1rem;
         }
         p {
-          font-size: 1.2rem;
+          font-size: 1rem;
           color: gray;
           font-weight: 500;
         }

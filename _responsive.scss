@@ -7,7 +7,14 @@
     }
   }
 }
-
+@media(max-width:1000px){
+  .app-box{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px auto;
+  }
+}
 @media (max-width: 870px) {
   header {
     position: fixed;
@@ -88,5 +95,21 @@
 
   .home .home-right form {
     display: none;
+  }
+}
+@media(max-width:840px){
+  .app-box{
+    div p{
+      display: none;
+    }
+    .div-img{
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+@media(max-width:368px){
+  .app-box{
+    width: 50% !important;
   }
 }
