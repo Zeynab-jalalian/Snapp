@@ -235,6 +235,7 @@ header ul li a i {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  object-fit: cover;
   cursor: pointer;
 }
 .mySwiper .swiper-pagination-bullet {
