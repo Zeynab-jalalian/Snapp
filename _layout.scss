@@ -164,7 +164,7 @@ header {
   .app-boxes {
     padding: 0 10%;
     margin-top: 50px;
-    @include flex(center,center);
+    @include flex(center, center);
     flex-wrap: wrap;
     .app-box {
       @include flex(start, center);
@@ -183,5 +183,43 @@ header {
         }
       }
     }
+  }
+}
+.mySwiper {
+  position: relative;
+  margin: 100px auto 10px auto;
+  width: 70%;
+  .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    .swiper-slide {
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .swiper-pagination-bullet-active {
+    background: white;
+  }
+  .swiper-pagination {
+    background: rgba(255, 255, 255, 0.2);
+    width: fit-content;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
