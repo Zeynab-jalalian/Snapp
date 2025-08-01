@@ -111,6 +111,13 @@
     }
   }
 }
+@media(max-width:480px){
+  .mySwiper{
+    margin-top: 50px;
+    width: 100%;
+    padding: 5px;
+  }
+}
 @media (max-width: 368px) {
   .app-box {
     width: 50% !important;

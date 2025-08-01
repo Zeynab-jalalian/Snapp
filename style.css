@@ -221,7 +221,7 @@ header ul li a i {
 .mySwiper {
   position: relative;
   margin: 100px auto 10px auto;
-  width: 70%;
+  width: 90%;
 }
 .mySwiper .swiper-wrapper {
   width: 100%;
@@ -356,6 +356,13 @@ header ul li a i {
   .app-box .div-img {
     width: 50px;
     height: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .mySwiper {
+    margin-top: 50px;
+    width: 100%;
+    padding: 5px;
   }
 }
 @media (max-width: 368px) {
