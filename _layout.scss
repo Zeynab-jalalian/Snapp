@@ -246,9 +246,39 @@ header {
     }
     p {
       color: #333;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-align: justify;
-      line-height: 35px;
+      padding-bottom: 40px;
+    }
+  }
+}
+.options {
+  @include flex(space-evenly,center);
+  flex-wrap: wrap;
+  gap: 30px;
+
+  .option {
+    position: relative;
+    bottom: 130px;
+    padding: 0 1%;
+    margin-bottom: 50px;
+    div {
+      background: #c9c9c9;
+      width: 250px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        object-fit: cover;
+      }
+    }
+    h2 {
+      font-weight: 500;
+      margin: 10px auto;
+    }
+    p {
+      max-width: 250px;
     }
   }
 }

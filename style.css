@@ -283,9 +283,41 @@ header ul li a i {
 }
 .super-app .s-a-left p {
   color: #333;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: justify;
-  line-height: 35px;
+  padding-bottom: 40px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.options .option {
+  position: relative;
+  bottom: 130px;
+  padding: 0 1%;
+  margin-bottom: 50px;
+}
+.options .option div {
+  background: #c9c9c9;
+  width: 250px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options .option div img {
+  object-fit: cover;
+}
+.options .option h2 {
+  font-weight: 500;
+  margin: 10px auto;
+}
+.options .option p {
+  max-width: 250px;
 }
 
 @media (max-width: 1024px) {
@@ -308,6 +340,10 @@ header ul li a i {
   }
   .super-app .s-a-right {
     height: 300px;
+  }
+  .options .option {
+    position: relative;
+    bottom: 0;
   }
 }
 @media (max-width: 870px) {
@@ -403,6 +439,9 @@ header ul li a i {
     margin-top: 50px;
     width: 100%;
     padding: 5px;
+  }
+  .super-app .s-a-right {
+    height: 200px;
   }
 }
 @media (max-width: 368px) {

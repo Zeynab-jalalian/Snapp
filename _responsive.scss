@@ -23,6 +23,10 @@
   .super-app .s-a-right {
     height: 300px;
   }
+  .options .option {
+    position: relative;
+    bottom: 0;
+  }
 }
 @media (max-width: 870px) {
   header {
@@ -125,6 +129,9 @@
     margin-top: 50px;
     width: 100%;
     padding: 5px;
+  }
+  .super-app .s-a-right {
+    height: 200px;
   }
 }
 @media (max-width: 368px) {
