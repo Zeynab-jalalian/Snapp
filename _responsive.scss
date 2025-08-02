@@ -31,7 +31,7 @@
     width: 90%;
   }
   .navy-boxes {
-    @include grid(1, 1fr);
+    @include grid(1 , 1fr);
   }
 }
 @media (max-width: 870px) {
