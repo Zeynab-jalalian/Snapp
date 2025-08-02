@@ -27,11 +27,14 @@
     position: relative;
     bottom: 0;
   }
-  .navy .navy-video {
-    width: 90%;
-  }
-  .navy-boxes {
-    @include grid(1 , 1fr);
+  .navy {
+    .navy-boxes {
+      @include grid(1, 1fr);
+      width: 100%;
+    }
+    .navy-video {
+      width: 90%;
+    }
   }
 }
 @media (max-width: 870px) {
