@@ -299,10 +299,10 @@ header ul li a i {
   position: relative;
   bottom: 130px;
   padding: 0 1%;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .options .option div {
-  background: #c9c9c9;
+  background: #e7e7e7;
   width: 250px;
   border-radius: 20px;
   display: flex;
@@ -318,6 +318,72 @@ header ul li a i {
 }
 .options .option p {
   max-width: 250px;
+}
+
+.navy {
+  background: #d1fff6;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.navy .navy-heading h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+}
+.navy .navy-heading p {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.navy .navy-heading button {
+  background: #21aa58;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  opacity: 1;
+  transition: 0.2s;
+}
+.navy .navy-heading button:hover {
+  background: #5fbd85;
+}
+.navy .navy-video {
+  width: 80%;
+  height: 100%;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+.navy .navy-video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.navy .navy-boxes {
+  width: 80%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.navy .navy-boxes .navy-box {
+  background: white;
+  padding: 20px 50px;
+  border-radius: 20px;
+  margin: 20px;
+}
+.navy .navy-boxes .navy-box h2,
+.navy .navy-boxes .navy-box p {
+  text-align: right;
+  color: #333;
+  margin: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -344,6 +410,13 @@ header ul li a i {
   .options .option {
     position: relative;
     bottom: 0;
+  }
+  .navy .navy-video {
+    width: 90%;
+  }
+  .navy-boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 870px) {
@@ -442,6 +515,9 @@ header ul li a i {
   }
   .super-app .s-a-right {
     height: 200px;
+  }
+  .navy .navy-video {
+    width: 100%;
   }
 }
 @media (max-width: 368px) {

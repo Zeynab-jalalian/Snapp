@@ -27,6 +27,12 @@
     position: relative;
     bottom: 0;
   }
+  .navy .navy-video {
+    width: 90%;
+  }
+  .navy-boxes {
+    @include grid(1, 1fr);
+  }
 }
 @media (max-width: 870px) {
   header {
@@ -132,6 +138,9 @@
   }
   .super-app .s-a-right {
     height: 200px;
+  }
+  .navy .navy-video {
+    width: 100%;
   }
 }
 @media (max-width: 368px) {
