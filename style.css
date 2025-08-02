@@ -180,42 +180,63 @@ header ul li a i {
   border-radius: 10px;
 }
 
-.apps h1 {
-  text-align: center;
-}
-.apps .div-img {
-  width: 70px;
-  height: 70px;
-  margin-left: 5px;
-}
-.apps .div-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.apps {
+  margin: 50px auto;
+  padding: 0 5%;
 }
 .apps .app-boxes {
-  padding: 0 10%;
-  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.apps .app-boxes h1 {
+  text-align: center;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  font-size: 2rem;
+  color: #333;
+  padding-top: 30px;
+  margin-bottom: 20px;
 }
-.apps .app-boxes .app-box {
+.apps .app-boxes ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.apps .app-boxes ul li {
+  width: 33.3333333%;
+  height: 80px;
+  margin: 30px auto;
+}
+.apps .app-boxes ul li a {
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 33.3333333%;
-  gap: 10px;
-  margin: 20px auto;
+  padding-right: 10px;
+  height: 100%;
 }
-.apps .app-boxes .app-box div h4 {
-  font-size: 1.1rem;
+.apps .app-boxes ul li a img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
 }
-.apps .app-boxes .app-box div p {
-  font-size: 1rem;
-  color: gray;
+.apps .app-boxes ul li a div {
+  margin-right: 10px;
+}
+.apps .app-boxes ul li a div h4 {
+  color: #000;
   font-weight: 500;
+  font-size: 1.3rem;
+}
+.apps .app-boxes ul li a div p {
+  color: #333;
 }
 
 .mySwiper {
@@ -437,16 +458,10 @@ header ul li a i {
   header ul li {
     font-size: 1.2rem;
   }
-  .app-boxes {
-    padding: 2%;
-  }
 }
 @media (max-width: 1000px) {
-  .app-box {
+  .apps .app-boxes ul li a {
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 30px auto;
   }
   .super-app {
     grid-template-columns: repeat(1, 1fr);
@@ -544,10 +559,17 @@ header ul li a i {
   }
 }
 @media (max-width: 840px) {
-  .app-box div p {
+  .app-boxes ul li div p {
     display: none;
   }
-  .app-box .div-img {
+  .apps .app-boxes ul li a div h4 {
+    font-size: 1rem;
+  }
+  .app-boxes ul li a img {
+    width: 50px;
+    height: 50px;
+  }
+  .div-img {
     width: 50px;
     height: 50px;
   }
@@ -575,8 +597,8 @@ header ul li a i {
     margin: 10px;
   }
 }
-@media (max-width: 368px) {
-  .app-box {
+@media (max-width: 350px) {
+  .app-boxes ul li {
     width: 50% !important;
   }
 }
