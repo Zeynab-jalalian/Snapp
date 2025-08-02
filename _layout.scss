@@ -224,3 +224,31 @@ header {
     transform: translateX(-50%);
   }
 }
+.super-app {
+  padding: 5%;
+  @include grid(2, 1fr);
+  gap: 10px;
+  .s-a-right {
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .s-a-left {
+    padding: 20px;
+    h1 {
+      color: rgba(0, 0, 0, 0.9);
+      margin-bottom: 20px;
+    }
+    p {
+      color: #333;
+      font-size: 1.2rem;
+      text-align: justify;
+      line-height: 35px;
+    }
+  }
+}
