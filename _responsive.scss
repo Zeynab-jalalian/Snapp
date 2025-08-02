@@ -145,6 +145,14 @@
   .navy .navy-video {
     width: 100%;
   }
+  .footer .Certificate {
+    flex-wrap: wrap;
+    width: 100px;
+
+    img{
+        margin: 10px;
+    }
+  }
 }
 @media (max-width: 368px) {
   .app-box {

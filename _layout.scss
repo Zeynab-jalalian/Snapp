@@ -356,3 +356,41 @@ header {
     }
   }
 }
+.footer {
+  padding: 5%;
+  @include flex(center, center);
+  flex-direction: column;
+
+  ul {
+    @include flex(center, center);
+    flex-wrap: wrap;
+    gap: 15px;
+
+    li {
+      margin: 0 7px;
+      a {
+        color: #5c5c5c;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .social-footer {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    @include flex(center, center);
+
+    a {
+      margin: 0 8px;
+    }
+  }
+  .Certificate {
+    @include flex(center, center);
+    width: 200px;
+
+    img {
+      object-fit: cover;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+  }
+}
