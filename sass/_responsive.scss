@@ -31,6 +31,35 @@
     }
   }
 }
+@media (min-width: 870px) {
+  .dropdown {
+    position: relative;
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      padding: 10px 0;
+      border-radius: 5px;
+      min-width: 200px;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid rgba(0, 0, 0, 0.2);
+
+      li {
+        margin: 7px;
+        font-size: 1.3rem;
+      }
+    }
+    &:hover > .dropdown-menu {
+      display: flex;
+    }
+  }
+}
 @media (max-width: 870px) {
   header {
     position: fixed;
@@ -44,6 +73,7 @@
     order: 2;
   }
   .menu-ul {
+    overflow-y: auto;
     position: fixed;
     top: 0;
     right: -100%;
@@ -112,6 +142,65 @@
   .home .home-right form {
     display: none;
   }
+
+  header {
+    .dropdown {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      a {
+        width: 100%;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      i.fa-chevron-down {
+        margin-right: 10px;
+        transition: transform 0.3s ease;
+        position: static;
+      }
+
+      &.open {
+        i.fa-chevron-down {
+          transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+          display: flex;
+        }
+      }
+
+      .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        background: #f9f9f9;
+        padding: 10px 20px;
+        margin-top: 5px;
+        margin-right: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+        width: 100%; // 
+        box-sizing: border-box; 
+        text-align: right;
+        li {
+          padding: 8px 0;
+          font-size: 1.2rem;
+          width: 100%;
+
+          a {
+            padding: 0;
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 840px) {
   .app-boxes ul li div p {
@@ -121,7 +210,7 @@
     font-size: 1rem;
     text-align: center;
   }
-  .app-boxes ul li a img{
+  .app-boxes ul li a img {
     width: 50px;
     height: 50px;
   }
@@ -155,8 +244,8 @@
     }
   }
 }
-@media(max-width:350px){
-  .app-boxes ul li{
+@media (max-width: 350px) {
+  .app-boxes ul li {
     width: 50% !important;
   }
 }

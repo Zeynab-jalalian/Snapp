@@ -14,6 +14,24 @@ menuToggle.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   menuUl.classList.remove("active");
 });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll("header .dropdown");
+
+    dropdowns.forEach((dropdown) => {
+      const trigger = dropdown.querySelector("a");
+
+      trigger.addEventListener("click", function (e) {
+       
+        if (window.innerWidth <= 870) {
+          e.preventDefault();
+          dropdown.classList.toggle("open");
+        }
+      });
+    });
+  });
+  
 /* slider */
 var swiper = new Swiper(".mySwiper", {
   loop: true,
