@@ -47,7 +47,34 @@ header {
     }
   }
 
- 
+  
+  .dropdown {
+    position: relative;
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      padding: 10px 0;
+      border-radius: 5px;
+      min-width: 200px;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid rgba(0, 0, 0, 0.2);
+
+      li{
+        margin: 7px;
+        font-size: 1.3rem;
+      }
+    }
+    &:hover > .dropdown-menu{
+      display: flex;
+    }
+  }
 }
 .footer {
   padding: 5%;
