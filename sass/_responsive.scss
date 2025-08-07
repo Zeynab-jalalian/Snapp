@@ -30,6 +30,29 @@
       width: 90%;
     }
   }
+  .request {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+
+    .req-btn {
+      grid-column: 1/-1;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: auto;
+
+      button {
+        width: 400px !important;
+      }
+    }
+    .req-content {
+      grid-column: 1 / 2;
+      margin: auto;
+    }
+    .req-img {
+      grid-column: 2 / 3;
+      margin: auto;
+    }
+  }
 }
 @media (min-width: 870px) {
   .dropdown {
@@ -222,8 +245,41 @@
   .badges {
     margin-bottom: 30px;
   }
-}
 
+  .request {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .req-btn {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: auto;
+
+      button {
+        width: 300px !important;
+      }
+    }
+    .req-content {
+      margin: auto;
+      grid-column: 1 / -1;
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+    .req-img {
+      margin: auto;
+      grid-column: 1 / -1;
+      width: 50%;
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .request .req-img {
+    width: 70%;
+  }
+}
 @media (max-width: 480px) {
   .mySwiper {
     margin-top: 50px;
