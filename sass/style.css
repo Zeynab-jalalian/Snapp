@@ -627,11 +627,13 @@ header ul li a i {
     padding: 8px 0;
     font-size: 1.2rem;
     width: 100%;
+    margin-bottom: 10px !important;
   }
   header .dropdown .dropdown-menu li a {
     padding: 0;
     display: block;
     width: 100%;
+    color: rgb(112, 112, 112);
   }
 }
 @media (max-width: 840px) {

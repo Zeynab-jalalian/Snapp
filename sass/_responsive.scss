@@ -184,18 +184,20 @@
         margin-right: 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
-        width: 100%; // 
-        box-sizing: border-box; 
+        width: 100%;
+        box-sizing: border-box;
         text-align: right;
         li {
           padding: 8px 0;
           font-size: 1.2rem;
           width: 100%;
+          margin-bottom: 10px !important;
 
           a {
             padding: 0;
             display: block;
             width: 100%;
+            color: rgb(112, 112, 112);
           }
         }
       }
