@@ -353,6 +353,10 @@ a {
   color: #333;
 }
 
+.btn-home-taxi {
+  margin-top: 70px !important;
+}
+
 header {
   background: #fff;
   position: fixed;
