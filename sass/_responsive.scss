@@ -115,6 +115,7 @@
 
     &.active {
       right: -30px !important;
+      overflow-x: hidden;
     }
   }
 
@@ -178,11 +179,9 @@
       .dropdown-menu {
         display: none;
         flex-direction: column;
-        background: #f9f9f9;
         padding: 10px 20px;
         margin-top: 5px;
         margin-right: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
         width: 100%;
         box-sizing: border-box;
