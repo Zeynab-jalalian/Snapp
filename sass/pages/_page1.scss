@@ -1,52 +1,4 @@
-header {
-  background: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 2%;
-  width: 100%;
-  z-index: 100;
-  @include flex(start, center);
-  .menu-toggle {
-    display: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.2s;
-    &:hover {
-      background: #dfdfdfc7;
-    }
-    i {
-      color: $snapp-green;
-      font-size: 1.2rem;
-    }
-  }
-  .logo {
-    @include flex(center, center);
-    cursor: pointer;
-  }
-  ul {
-    .close-btn {
-      display: none;
-    }
-    @include flex(center, center);
-    margin-right: 25px;
-    li {
-      a {
-        color: $header;
-        font-weight: 400;
-        i {
-          font-size: 0.9rem;
-          margin-right: 2px;
-        }
-      }
-      @include flex(center, center);
-      margin: 0 15px;
-      font-size: 1.4rem;
-    }
-  }
-}
+
 .home {
   margin-top: 100px;
   @include grid(2, 1fr);
@@ -371,44 +323,6 @@ header {
         font-size: 1.1rem;
         color: #333;
       }
-    }
-  }
-}
-.footer {
-  padding: 5%;
-  @include flex(center, center);
-  flex-direction: column;
-
-  ul {
-    @include flex(center, center);
-    flex-wrap: wrap;
-    gap: 15px;
-
-    li {
-      margin: 0 7px;
-      a {
-        color: #5c5c5c;
-        font-size: 1.3rem;
-      }
-    }
-  }
-  .social-footer {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    @include flex(center, center);
-
-    a {
-      margin: 0 8px;
-    }
-  }
-  .Certificate {
-    @include flex(center, center);
-    width: 200px;
-
-    img {
-      object-fit: cover;
-      cursor: pointer;
-      margin: 0 10px;
     }
   }
 }
