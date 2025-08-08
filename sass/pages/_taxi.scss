@@ -54,7 +54,7 @@
   overflow: hidden;
   color: white;
 
-  img{
+  img {
     z-index: 1;
   }
 
@@ -99,6 +99,87 @@
 
     &:hover {
       background: #d8d8d8;
+    }
+  }
+}
+.security {
+  max-width: 1140px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .secs-right {
+    width: 50%;
+    .sec-right {
+      width: 100%;
+      height: auto;
+      background: #ebecf2;
+      margin: 20px auto;
+      padding: 20px 40px;
+      border-radius: 20px;
+      user-select: none;
+      h1 {
+        text-align: center;
+      }
+      p {
+        margin: 5px auto;
+        font-size: 1.3rem;
+        color: #111;
+        text-align: justify;
+      }
+      div {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+
+        span {
+          color: #333;
+          font-size: 1.3rem;
+          font-weight: 900;
+          margin: 10px 0;
+          text-align: justify;
+        }
+      }
+      &:hover {
+        background: $snapp-green;
+        h1,
+        p {
+          color: $white;
+        }
+      }
+      &.first:hover {
+        h1,
+        p {
+          user-select: text;
+        }
+      }
+    }
+  }
+
+  .sec-left {
+    video{
+      width: 100%;
+      height: 100%;
+      border-radius: 20px 20px 0 0;
+    }
+    background: rgb(233 247 238);
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    h1 {
+      text-align: center;
+    }
+    p {
+      margin: 5px auto;
+      font-size: 1.3rem;
+      color: #111;
+      text-align: justify;
+    }
+    div{
+      padding: 20px 40px;
     }
   }
 }

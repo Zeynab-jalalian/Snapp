@@ -487,6 +487,83 @@ a {
   background: #d8d8d8;
 }
 
+.security {
+  max-width: 1140px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.security .secs-right {
+  width: 50%;
+}
+.security .secs-right .sec-right {
+  width: 100%;
+  height: auto;
+  background: #ebecf2;
+  margin: 20px auto;
+  padding: 20px 40px;
+  border-radius: 20px;
+  user-select: none;
+}
+.security .secs-right .sec-right h1 {
+  text-align: center;
+}
+.security .secs-right .sec-right p {
+  margin: 5px auto;
+  font-size: 1.3rem;
+  color: #111;
+  text-align: justify;
+}
+.security .secs-right .sec-right div {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+.security .secs-right .sec-right div span {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin: 10px 0;
+  text-align: justify;
+}
+.security .secs-right .sec-right:hover {
+  background: #21aa58;
+}
+.security .secs-right .sec-right:hover h1,
+.security .secs-right .sec-right:hover p {
+  color: white;
+}
+.security .secs-right .sec-right.first:hover h1,
+.security .secs-right .sec-right.first:hover p {
+  user-select: text;
+}
+.security .sec-left {
+  background: rgb(233, 247, 238);
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+}
+.security .sec-left video {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.security .sec-left h1 {
+  text-align: center;
+}
+.security .sec-left p {
+  margin: 5px auto;
+  font-size: 1.3rem;
+  color: #111;
+  text-align: justify;
+}
+.security .sec-left div {
+  padding: 20px 40px;
+}
+
 header {
   background: #fff;
   position: fixed;
