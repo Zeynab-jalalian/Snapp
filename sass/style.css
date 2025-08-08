@@ -443,7 +443,9 @@ a {
   padding-right: 40px !important;
   overflow: hidden;
   color: white;
-  z-index: 0;
+}
+.badge img {
+  z-index: 1;
 }
 .badge::before {
   content: "";
@@ -454,7 +456,6 @@ a {
   height: 100%;
   background: url("/img/8.jpg") no-repeat center center/cover;
   filter: brightness(0.5);
-  z-index: -1;
 }
 .badge h3,
 .badge p {
