@@ -456,6 +456,7 @@ a {
   height: 100%;
   background: url("/img/8.jpg") no-repeat center center/cover;
   filter: brightness(0.5);
+  z-index: -1;
 }
 .badge h3,
 .badge p {
@@ -563,6 +564,26 @@ a {
 }
 .security .sec-left div {
   padding: 20px 40px;
+}
+
+.taxi-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: 930px;
+}
+.taxi-boxes .taxi-box {
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+}
+.taxi-boxes .taxi-box p {
+  font-size: 1.3rem;
+}
+.taxi-boxes .taxi-box:nth-child(odd) {
+  background: #ebecf2;
 }
 
 header {
@@ -718,7 +739,8 @@ header ul li a i {
     width: 100%;
     flex-direction: column;
   }
-  .security .secs-right, .security .sec-left {
+  .security .secs-right,
+  .security .sec-left {
     width: 100%;
   }
   .security .secs-right {
@@ -726,6 +748,10 @@ header ul li a i {
   }
   .security .sec-left {
     order: 1;
+  }
+  .taxi-boxes {
+    width: 100%;
+    padding: 2%;
   }
 }
 @media (min-width: 870px) {

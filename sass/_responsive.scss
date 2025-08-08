@@ -53,19 +53,24 @@
       margin: auto;
     }
   }
-  .security{
+  .security {
     width: 100%;
     flex-direction: column;
 
-    .secs-right,.sec-left{
+    .secs-right,
+    .sec-left {
       width: 100%;
     }
-    .secs-right{
+    .secs-right {
       order: 2;
     }
-    .sec-left{
+    .sec-left {
       order: 1;
     }
+  }
+  .taxi-boxes {
+    width: 100%;
+    padding: 2%;
   }
 }
 @media (min-width: 870px) {
