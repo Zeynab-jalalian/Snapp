@@ -488,6 +488,7 @@ a {
 }
 
 .security {
+  padding: 2%;
   max-width: 1140px;
   margin: 20px auto;
   display: flex;
@@ -712,6 +713,19 @@ header ul li a i {
   .request .req-img {
     grid-column: 2/3;
     margin: auto;
+  }
+  .security {
+    width: 100%;
+    flex-direction: column;
+  }
+  .security .secs-right, .security .sec-left {
+    width: 100%;
+  }
+  .security .secs-right {
+    order: 2;
+  }
+  .security .sec-left {
+    order: 1;
   }
 }
 @media (min-width: 870px) {

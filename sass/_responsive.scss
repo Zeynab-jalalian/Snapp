@@ -53,6 +53,20 @@
       margin: auto;
     }
   }
+  .security{
+    width: 100%;
+    flex-direction: column;
+
+    .secs-right,.sec-left{
+      width: 100%;
+    }
+    .secs-right{
+      order: 2;
+    }
+    .sec-left{
+      order: 1;
+    }
+  }
 }
 @media (min-width: 870px) {
   .dropdown {
