@@ -293,6 +293,20 @@
       }
     }
   }
+  .taxi-registration{
+    flex-direction: column;
+    .taxi-reg-img{
+      order: 2;
+    }
+    .taxi-reg-content{
+      order: 1;
+    }
+    div{
+      width: 100%;
+      margin: 20px auto;
+    }
+
+  }
 }
 @media (max-width: 600px) {
   .request .req-img {

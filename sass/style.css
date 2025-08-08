@@ -22,7 +22,7 @@ a {
   text-decoration: none;
 }
 
-.btn-1, .request .req-btn .btn-1 {
+.btn-1, .taxi-registration div button, .request .req-btn .taxi-registration div button, .taxi-registration div .request .req-btn button, .request .req-btn .btn-1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,7 @@ a {
   transition: 0.2s;
   text-align: center;
 }
-.btn-1:hover, .request .req-btn .btn-1:hover {
+.btn-1:hover, .taxi-registration div button:hover, .request .req-btn .taxi-registration div button:hover, .taxi-registration div .request .req-btn button:hover, .request .req-btn .btn-1:hover {
   background: #2db965;
 }
 
@@ -586,6 +586,32 @@ a {
   background: #ebecf2;
 }
 
+.taxi-registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 5%;
+}
+.taxi-registration div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.taxi-registration div p {
+  margin: 20px auto;
+  font-size: 1.3rem;
+  color: #939393;
+  text-align: justify;
+}
+.taxi-registration div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 header {
   background: #fff;
   position: fixed;
@@ -951,6 +977,19 @@ header ul li a i {
   }
   .request .req-img img {
     border-radius: 10px;
+  }
+  .taxi-registration {
+    flex-direction: column;
+  }
+  .taxi-registration .taxi-reg-img {
+    order: 2;
+  }
+  .taxi-registration .taxi-reg-content {
+    order: 1;
+  }
+  .taxi-registration div {
+    width: 100%;
+    margin: 20px auto;
   }
 }
 @media (max-width: 600px) {
