@@ -683,6 +683,25 @@ a {
   gap: 10px;
 }
 
+.s-a-left-bike {
+  padding: 20px;
+}
+.s-a-left-bike span {
+  color: #7a7a7a;
+  font-size: 1.1rem;
+  margin: 10px auto;
+  display: inline-block;
+}
+.s-a-left-bike h1 {
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 20px;
+}
+.s-a-left-bike p {
+  color: #333;
+  font-size: 1.3rem;
+  margin: 5px auto;
+}
+
 header {
   background: #fff;
   position: fixed;
