@@ -612,6 +612,66 @@ a {
   object-fit: cover;
 }
 
+.accordion-box {
+  padding: 2%;
+  background-color: #ebecf2;
+}
+.accordion-box .accordion {
+  max-width: 930px;
+  margin: 20px auto;
+}
+.accordion-box .accordion .accordion-item {
+  border: 1px solid #f7f7f7;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.accordion-box .accordion .accordion-item .accordion-header {
+  background: #f7f7f7;
+  border-radius: 20px;
+  color: #333;
+  padding: 20px 16px;
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-weight: bold;
+}
+.accordion-box .accordion .accordion-item .accordion-header.active {
+  border-radius: 20px 20px 0 0;
+}
+.accordion-box .accordion .accordion-item .accordion-header i {
+  transition: transform 0.3s ease;
+}
+.accordion-box .accordion .accordion-item .accordion-header.active i {
+  transform: rotate(180deg);
+}
+.accordion-box .accordion .accordion-item .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  color: #747474;
+  font-size: 1.3rem;
+  padding: 0 16px;
+  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+}
+.accordion-box .accordion .accordion-item .accordion-content p {
+  padding: 12px 0;
+  margin: 0;
+  line-height: 1.6;
+}
+.accordion-box .accordion .accordion-item .accordion-content.active {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-radius: 0 0 20px 20px;
+}
+
 header {
   background: #fff;
   position: fixed;
