@@ -620,6 +620,9 @@ a {
   max-width: 930px;
   margin: 20px auto;
 }
+.accordion-box .accordion h1 {
+  padding: 20px;
+}
 .accordion-box .accordion .accordion-item {
   border: 1px solid #f7f7f7;
   border-radius: 20px;
