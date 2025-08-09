@@ -52,6 +52,7 @@
       grid-column: 2 / 3;
       margin: auto;
     }
+   
   }
   .security {
     width: 100%;
@@ -72,6 +73,10 @@
     width: 100%;
     padding: 2%;
   }
+   .bike-home-btn{
+      flex-direction: column;
+      
+    }
 }
 @media (min-width: 870px) {
   .dropdown {

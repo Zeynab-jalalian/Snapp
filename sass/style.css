@@ -675,6 +675,13 @@ a {
   border-radius: 0 0 20px 20px;
 }
 
+.bike-home-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 header {
   background: #fff;
   position: fixed;
@@ -841,6 +848,9 @@ header ul li a i {
   .taxi-boxes {
     width: 100%;
     padding: 2%;
+  }
+  .bike-home-btn {
+    flex-direction: column;
   }
 }
 @media (min-width: 870px) {
