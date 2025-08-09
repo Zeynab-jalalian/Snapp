@@ -851,7 +851,7 @@ a {
   width: 500px;
   height: 100%;
   border-radius: 20px;
-  background: #EBECF2;
+  background: #ebecf2;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -876,8 +876,43 @@ a {
 .order-boxes .order-box:hover {
   background: deeppink;
 }
-.order-boxes .order-box:hover h1, .order-boxes .order-box:hover p {
+.order-boxes .order-box:hover h1,
+.order-boxes .order-box:hover p {
   color: white;
+}
+
+.restaurants {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.restaurants p {
+  font-size: 1.3rem;
+  max-width: 900px;
+  color: #333;
+  margin: auto;
+  font-weight: 600;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: justify;
+}
+.restaurants div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.restaurants div img {
+  width: 50px;
+  height: 50px;
+  margin: 20px 50px;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 header {
