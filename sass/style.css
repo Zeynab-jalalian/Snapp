@@ -839,6 +839,47 @@ a {
   border-radius: 20px;
 }
 
+.order-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.order-boxes .order-box {
+  width: 500px;
+  height: 100%;
+  border-radius: 20px;
+  background: #EBECF2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order-boxes .order-box div h1 {
+  text-align: center;
+  margin: 10px auto;
+}
+.order-boxes .order-box div p {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 700;
+  text-align: justify;
+  padding: 10px 20px;
+}
+.order-boxes .order-box img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+.order-boxes .order-box:hover {
+  background: deeppink;
+}
+.order-boxes .order-box:hover h1, .order-boxes .order-box:hover p {
+  color: white;
+}
+
 header {
   background: #fff;
   position: fixed;

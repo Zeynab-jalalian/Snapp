@@ -1,5 +1,5 @@
-.home-right-order{
-    background: deeppink !important;
+.home-right-order {
+  background: deeppink !important;
 }
 .request {
   display: grid;
@@ -58,5 +58,51 @@
     width: 70%;
     height: 100%;
     border-radius: 20px;
+  }
+}
+.order-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  gap: 20px;
+  flex-wrap: wrap;
+  .order-box {
+    width: 500px;
+    height: 100%;
+    border-radius: 20px;
+    background: #EBECF2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    div {
+      h1 {
+        text-align: center;
+        margin: 10px auto;
+      }
+      p {
+        font-size: 1.3rem;
+        color: #333;
+        font-weight: 700;
+        text-align: justify;
+        padding: 10px 20px;
+      }
+    }
+
+    img {
+      width: 90%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover{
+      background: deeppink;
+
+      h1,p{
+        color: $white;
+      }
+    }
   }
 }
