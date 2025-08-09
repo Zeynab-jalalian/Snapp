@@ -339,7 +339,10 @@
     }
   }
   .video-bike{
-    width: 90%;
+    width: 100%;
+   video{
+     width: 90%;
+   }
   }
 }
 @media (max-width: 350px) {
