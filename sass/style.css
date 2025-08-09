@@ -741,6 +741,10 @@ a {
   border-radius: 20px;
 }
 
+.home-right-order {
+  background: deeppink !important;
+}
+
 header {
   background: #fff;
   position: fixed;
