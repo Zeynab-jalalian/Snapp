@@ -47,17 +47,6 @@ headers.forEach(header => {
   header.addEventListener('click', () => {
     const content = header.nextElementSibling;
 
-
-    headers.forEach(h => {
-      if (h !== header) {
-        h.classList.remove('active');
-        const c = h.nextElementSibling;
-        c.style.maxHeight = null;
-        c.classList.remove('open');
-      }
-    });
-
-
     header.classList.toggle('active');
 
     if (header.classList.contains('active')) {
