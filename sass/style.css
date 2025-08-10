@@ -1042,6 +1042,7 @@ a {
   object-fit: cover;
   border-radius: 20px;
   cursor: pointer;
+  margin: 20px;
 }
 
 .products {
