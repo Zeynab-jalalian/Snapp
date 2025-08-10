@@ -102,6 +102,66 @@ a {
   background: rgba(235, 235, 235, 0.753);
 }
 
+.btn-5, .home-right-super .btn-home-super2 {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  outline: none;
+  background: orangered;
+  font-size: 1.3rem;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-5:hover, .home-right-super .btn-home-super2:hover {
+  background: rgb(255, 105, 50);
+}
+
+.btn-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  background: blue;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  transition: 0.2s;
+  text-align: center;
+}
+.btn-6:hover {
+  background: rgb(53, 53, 255);
+}
+
+.btn-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: rgba(223, 223, 223, 0.753);
+  font-size: 1.3rem;
+  color: blue;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-7:hover {
+  background: rgba(235, 235, 235, 0.753);
+}
+
 .home {
   margin-top: 100px;
   display: grid;
@@ -935,6 +995,21 @@ a {
   width: 200px;
   height: 100%;
   object-fit: cover;
+}
+
+.home-right-super {
+  background: blue !important;
+}
+.home-right-super .btn-home-super2 {
+  margin-top: 30px;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 header {

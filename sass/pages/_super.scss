@@ -1,0 +1,21 @@
+.home-right-super {
+  background: blue !important;
+  .btn-home-super2 {
+    @extend .btn-5;
+    margin-top: 30px;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+.btn-6{
+    @extend .btn-6;
+}
+.btn-7{
+    @extend .btn-7;
+}
