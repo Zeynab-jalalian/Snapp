@@ -1,3 +1,51 @@
-.home-right-flight{
-    background: linear-gradient(to bottom right ,rgba(255, 21, 60, 0.877),rgb(255, 25, 63)) !important;
+.home-right-flight {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 21, 60, 0.877),
+    rgb(255, 25, 63)
+  ) !important;
+}
+.badge-flight {
+  img {
+    width: 50px;
+  }
+}
+.taxi-box {
+  h2 {
+    margin: 10px auto;
+    font-size: 1.5rem;
+  }
+}
+.sec-left-flight {
+  background: rgba(255, 236, 236, 1) !important;
+}
+.sec-right-flight {
+  &:hover {
+    background: rgba(255, 21, 60, 0.877) !important;
+    h1,
+    p {
+      user-select: none !important;
+    }
+  }
+}
+.btn-f {
+  @extend .btn-f;
+}
+.btn-f2 {
+  @extend .btn-f2;
+}
+.video-flight {
+  margin: 30px auto;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  background: rgb(247, 233, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  video {
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+  }
 }
