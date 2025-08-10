@@ -1160,6 +1160,28 @@ a {
   border-radius: 20px;
 }
 
+.flight-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 30px auto;
+}
+.flight-boxes .flight-box {
+  cursor: pointer;
+  text-align: center;
+  margin: 20px;
+}
+.flight-boxes .flight-box img {
+  width: 100px;
+  object-fit: cover;
+}
+.flight-boxes .flight-box h1 {
+  font-size: 1.3rem;
+}
+
 header {
   background: #fff;
   position: fixed;
