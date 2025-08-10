@@ -547,6 +547,7 @@ a {
   overflow: hidden;
   color: white;
   margin: 50px auto;
+  background: #444;
 }
 .badge img {
   z-index: 1;
@@ -1076,6 +1077,10 @@ a {
 .products .product-cat .product img {
   width: 75px;
   object-fit: cover;
+}
+
+.home-right-flight {
+  background: linear-gradient(to bottom right, rgba(255, 21, 60, 0.877), rgb(255, 25, 63)) !important;
 }
 
 header {
