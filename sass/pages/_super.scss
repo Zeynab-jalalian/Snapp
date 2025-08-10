@@ -13,35 +13,64 @@
     transition: 0.3s;
   }
 }
-.btn-6{
-    @extend .btn-6;
+.btn-6 {
+  @extend .btn-6;
 }
-.btn-7{
-    @extend .btn-7;
+.btn-7 {
+  @extend .btn-7;
 }
-.sec-right-super{
-  &:hover{
+.sec-right-super {
+  &:hover {
     background: blue !important;
     user-select: none !important;
   }
 }
-.sec-left-super{
+.sec-left-super {
   background: #ebecf2 !important;
 }
-.health{
-  @include flex(center,center);
+.health {
+  @include flex(center, center);
   flex-direction: column;
   margin: 30px auto;
 
-  div{
-    @include flex(space-around,center);
+  div {
+    @include flex(space-around, center);
     flex-wrap: wrap;
     width: 100%;
     margin: 20px;
-    img{
-     width: 150px;
+    img {
+      width: 150px;
       object-fit: cover;
       border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+}
+.products {
+  width: 100%;
+  @include flex(center, center);
+  flex-direction: column;
+  margin: 30px auto;
+
+  .product-cat {
+    @include flex(space-around, center);
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    .product {
+      cursor: pointer;
+      @include flex(center, center);
+      flex-direction: column;
+      width: 300px;
+      text-align: center;
+      margin:30px 20px;
+      h2{
+        font-size: 1.2rem;
+      }
+      img {
+        width: 75px;
+        object-fit: cover;
+      }
     }
   }
 }
