@@ -358,6 +358,7 @@ a {
   margin: auto;
   position: absolute;
   left: 50%;
+  bottom: 30px;
   transform: translateX(-50%);
 }
 
@@ -1019,6 +1020,27 @@ a {
 
 .sec-left-super {
   background: #ebecf2 !important;
+}
+
+.health {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px auto;
+}
+.health div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px;
+}
+.health div img {
+  width: 150px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 header {

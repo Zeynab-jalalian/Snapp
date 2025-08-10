@@ -28,3 +28,20 @@
 .sec-left-super{
   background: #ebecf2 !important;
 }
+.health{
+  @include flex(center,center);
+  flex-direction: column;
+  margin: 30px auto;
+
+  div{
+    @include flex(space-around,center);
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px;
+    img{
+     width: 150px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+}
