@@ -19,3 +19,12 @@
 .btn-7{
     @extend .btn-7;
 }
+.sec-right-super{
+  &:hover{
+    background: blue !important;
+    user-select: none !important;
+  }
+}
+.sec-left-super{
+  background: #ebecf2 !important;
+}

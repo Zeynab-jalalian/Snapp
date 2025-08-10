@@ -1012,6 +1012,15 @@ a {
   transition: 0.3s;
 }
 
+.sec-right-super:hover {
+  background: blue !important;
+  user-select: none !important;
+}
+
+.sec-left-super {
+  background: #ebecf2 !important;
+}
+
 header {
   background: #fff;
   position: fixed;
