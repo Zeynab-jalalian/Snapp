@@ -1301,6 +1301,29 @@ a {
   border-radius: 20px;
 }
 
+.bus-boxes {
+  width: 90%;
+  margin: auto;
+}
+.bus-boxes h1 {
+  padding: 2%;
+}
+.bus-boxes .bus-boxes-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.bus-boxes .bus-boxes-div .bus-box {
+  text-align: center;
+  margin: 20px;
+}
+.bus-boxes .bus-boxes-div .bus-box img {
+  width: 100px;
+  object-fit: cover;
+}
+
 header {
   background: #fff;
   position: fixed;
