@@ -34,6 +34,22 @@
 .btn-f2 {
   @extend .btn-f2;
 }
+.btn-f2f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  color: rgba(255, 21, 60, 0.877);
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
 .video-flight {
   margin: 30px auto;
   width: 100%;
@@ -87,7 +103,7 @@
     cursor: pointer;
 
     input[type="radio"] {
-      appearance: none; 
+      appearance: none;
       -webkit-appearance: none;
       -moz-appearance: none;
       width: 30px;
@@ -106,13 +122,13 @@
         position: absolute;
         width: 18px;
         height: 18px;
-        background-color: #fff; 
+        background-color: #fff;
         border-radius: 50%;
       }
 
       &:focus {
         outline: none;
-        box-shadow: 0 0 0 3px rgba(255, 192, 203, 0.6); 
+        box-shadow: 0 0 0 3px rgba(255, 192, 203, 0.6);
       }
 
       &:hover {
@@ -123,6 +139,53 @@
 
       &:hover::before {
         background-color: white;
+      }
+    }
+  }
+}
+.domestic-flight {
+  width:90%;
+  margin: auto;
+  h1 {
+    padding: 10px;
+  }
+  .doms-f {
+    @include flex(center, center);
+    flex-wrap: wrap;
+    padding: 2%;
+
+    .dom-f {
+      cursor: pointer;
+      text-align: center;
+      font-size: 1.3rem;
+      margin: 20px 50px;
+      img {
+        width: 100px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+.airlines {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  h1 {
+    padding: 10px;
+  }
+  .airline-boxes{
+    @include flex(center, center);
+    padding: 2%;
+    overflow: auto;
+
+    .airline {
+      cursor: pointer;
+      text-align: center;
+      font-size: 1.1rem;
+      margin: 20px;
+      img {
+        width: 150px;
+        border-radius: 20px;
       }
     }
   }
