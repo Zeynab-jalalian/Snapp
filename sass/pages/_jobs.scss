@@ -1,0 +1,53 @@
+.header-jobs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+  border-bottom: 1px solid #eee;
+  .icons-header {
+    @include flex(center, center);
+    a {
+      color: $snapp-green;
+      font-size: 1.1rem;
+      margin: 0 10px;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    button {
+        margin-right: 15px;
+      background: #00d500;
+      color: white;
+      border: none;
+      outline: none;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      &:hover{
+        background: $snapp-green;
+      }
+    }
+  }
+  ul {
+    @include flex(center, center);
+    li {
+      a {
+        color: rgb(135, 224, 0);
+        font-size: 1.2rem;
+        margin: 0 10px;
+        &:hover {
+          color: $snapp-green;
+        }
+      }
+    }
+  }
+  .logo {
+    a {
+      @include flex(center, center);
+      img {
+        width: 150px;
+      }
+    }
+  }
+}

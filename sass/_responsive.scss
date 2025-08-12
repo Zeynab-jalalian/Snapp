@@ -329,6 +329,14 @@
     object-fit: cover;
     margin: 20px auto;
   }
+  .header-jobs{
+  .icons-header{
+    display: none;
+  }
+  ul{
+    display: none;
+  }
+}
 }
 @media (max-width: 600px) {
   .request .req-img {
