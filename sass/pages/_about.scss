@@ -1,0 +1,25 @@
+.about-us {
+  padding: 5%;
+  width: 80%;
+  margin: 50px auto;
+  p {
+    color: #747474;
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin: 20px auto;
+    text-align: justify;
+  }
+  a {
+    @include flex(center, center);
+    flex-direction: column;
+    h2 {
+      text-align: center;
+      margin: 20px auto;
+      color: $snapp-green;
+    }
+    img {
+      width: 50%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1366,6 +1366,34 @@ a {
   object-fit: cover;
 }
 
+.about-us {
+  padding: 5%;
+  width: 80%;
+  margin: 50px auto;
+}
+.about-us p {
+  color: #747474;
+  font-size: 1.2rem;
+  line-height: 30px;
+  margin: 20px auto;
+  text-align: justify;
+}
+.about-us a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-us a h2 {
+  text-align: center;
+  margin: 20px auto;
+  color: #21aa58;
+}
+.about-us a img {
+  width: 50%;
+  object-fit: cover;
+}
+
 header {
   background: #fff;
   position: fixed;
