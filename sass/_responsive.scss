@@ -310,7 +310,7 @@
     }
   }
   .about-link {
-    h1{
+    h1 {
       text-align: center;
     }
     display: flex;
@@ -332,14 +332,31 @@
     object-fit: cover;
     margin: 20px auto;
   }
-  .header-jobs{
-  .icons-header{
-    display: none;
+  .header-jobs {
+    .icons-header {
+      display: none;
+    }
+    ul {
+      display: none;
+    }
   }
-  ul{
-    display: none;
+  .jobs-b-list {
+    display: flex;
+    justify-content: center;
+    align-items: end !important;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    padding-left: 30px;
+
+    ul {
+      li {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+    }
   }
-}
 }
 @media (max-width: 600px) {
   .request .req-img {
