@@ -1,3 +1,7 @@
+::selection {
+  background: $snapp-green;
+  color: white; 
+}
 .header-jobs {
   display: flex;
   justify-content: space-around;
@@ -15,7 +19,7 @@
       }
     }
     button {
-        margin-right: 15px;
+      margin-right: 15px;
       background: #00d500;
       color: white;
       border: none;
@@ -24,7 +28,7 @@
       border-radius: 10px;
       font-size: 1.2rem;
       cursor: pointer;
-      &:hover{
+      &:hover {
         background: $snapp-green;
       }
     }
@@ -49,5 +53,26 @@
         width: 150px;
       }
     }
+  }
+}
+.jobs-about-us {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  p {
+    margin: auto;
+    max-width: 80%;
+    text-align: justify;
+    font-size: 1.3rem;
+    direction: ltr;
+    font-weight: 300;
+    line-height: 35px;
   }
 }

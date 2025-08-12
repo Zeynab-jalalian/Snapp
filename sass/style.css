@@ -1440,6 +1440,11 @@ a {
   background: rgb(155, 255, 155);
 }
 
+::selection {
+  background: #21aa58;
+  color: white;
+}
+
 .header-jobs {
   display: flex;
   justify-content: space-around;
@@ -1494,6 +1499,28 @@ a {
 }
 .header-jobs .logo a img {
   width: 150px;
+}
+
+.jobs-about-us {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+.jobs-about-us h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.jobs-about-us p {
+  margin: auto;
+  max-width: 80%;
+  text-align: justify;
+  font-size: 1.3rem;
+  direction: ltr;
+  font-weight: 300;
+  line-height: 35px;
 }
 
 header {
