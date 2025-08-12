@@ -1276,8 +1276,8 @@ a {
 }
 
 .airlines {
-  width: 100%;
-  margin: auto;
+  width: 80%;
+  margin: 0 auto;
   padding: 10px;
 }
 .airlines h1 {
@@ -1285,20 +1285,62 @@ a {
 }
 .airlines .airline-boxes {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: nowrap;
   padding: 2%;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 .airlines .airline-boxes .airline {
   cursor: pointer;
   text-align: center;
   font-size: 1.1rem;
   margin: 20px;
+  flex: 0 0 auto;
 }
 .airlines .airline-boxes .airline img {
   width: 150px;
   border-radius: 20px;
+}
+
+.options-flight {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.options-flight .option-f {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 20px;
+  width: 250px;
+}
+.options-flight .option-f h2 {
+  font-size: 1.3rem;
+}
+.options-flight .option-f p {
+  color: #474747;
+  font-size: 1.1rem;
+}
+.options-flight .option-f div {
+  height: 80%;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #e7e7e7;
+}
+.options-flight .option-f div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .bus-boxes {
