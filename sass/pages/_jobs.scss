@@ -203,22 +203,18 @@
       flex-wrap: wrap;
       margin: 10px;
       li {
-        &:hover{
-          a{
-            color: $snapp-green;
-          }
+        &:hover {
+          color: $snapp-green;
         }
         margin: 20px;
-        a {
-          color: #000;
-          font-size: 1.3rem;
-          font-weight: 800;
-          padding: 5px;
-        }
+        cursor: pointer;
+        color: #000;
+        font-size: 1.3rem;
+        font-weight: 800;
+        padding: 5px;
+
         &.active {
-          a {
-            color: $snapp-green;
-          }
+          color: $snapp-green;
 
           border-bottom: 3px solid $snapp-green;
         }
@@ -226,6 +222,7 @@
     }
   }
   .join-boxes {
+    direction: ltr;
     text-align: left;
     margin-top: 30px;
     @include grid(2, 1fr);

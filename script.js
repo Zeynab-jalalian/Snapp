@@ -41,33 +41,34 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // accordion
-const headers = document.querySelectorAll('.accordion-header');
+const headers = document.querySelectorAll(".accordion-header");
 
-headers.forEach(header => {
-  header.addEventListener('click', () => {
+headers.forEach((header) => {
+  header.addEventListener("click", () => {
     const content = header.nextElementSibling;
 
-    header.classList.toggle('active');
+    header.classList.toggle("active");
 
-    if (header.classList.contains('active')) {
-      content.classList.add('open');
+    if (header.classList.contains("active")) {
+      content.classList.add("open");
       content.style.maxHeight = content.scrollHeight + "px";
 
- 
-      content.addEventListener('transitionend', function setNone() {
-        if (header.classList.contains('active')) {
+      content.addEventListener("transitionend", function setNone() {
+        if (header.classList.contains("active")) {
           content.style.maxHeight = "none";
         }
-        content.removeEventListener('transitionend', setNone);
+        content.removeEventListener("transitionend", setNone);
       });
-
     } else {
-
       content.style.maxHeight = content.scrollHeight + "px";
       setTimeout(() => {
         content.style.maxHeight = null;
-        content.classList.remove('open');
+        content.classList.remove("open");
       }, 10);
     }
   });
 });
+
+//joins
+
+
