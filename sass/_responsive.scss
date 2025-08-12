@@ -364,17 +364,28 @@
       }
     }
   }
-  .contact-us{
+  .contact-us {
     width: 100%;
     flex-wrap: wrap !important;
-    .contact-us-loc,.contact-us-info{
+    .contact-us-loc,
+    .contact-us-info {
       width: 100% !important;
       justify-content: start !important;
       box-shadow: none !important;
     }
-    .contact-us-loc{
+    .contact-us-loc {
       border-bottom: 1px solid #eee;
     }
+  }
+  .contact-us-info2 {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 600px) {

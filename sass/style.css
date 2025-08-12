@@ -1812,6 +1812,28 @@ a {
   color: #21aa58;
 }
 
+.contact-us-info2 {
+  width: 80%;
+  margin: 40px auto;
+}
+.contact-us-info2 div {
+  margin: 20px auto;
+}
+.contact-us-info2 div h2 {
+  color: #21aa58;
+}
+.contact-us-info2 div p {
+  font-size: 1.2rem;
+  margin: 10px auto;
+}
+.contact-us-info2 div a {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.contact-us-info2 div a:hover {
+  color: #21aa58;
+}
+
 header {
   background: #fff;
   position: fixed;
@@ -2248,13 +2270,24 @@ header ul li a i {
     width: 100%;
     flex-wrap: wrap !important;
   }
-  .contact-us .contact-us-loc, .contact-us .contact-us-info {
+  .contact-us .contact-us-loc,
+  .contact-us .contact-us-info {
     width: 100% !important;
     justify-content: start !important;
     box-shadow: none !important;
   }
   .contact-us .contact-us-loc {
     border-bottom: 1px solid #eee;
+  }
+  .contact-us-info2 {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 600px) {
