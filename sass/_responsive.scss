@@ -364,6 +364,18 @@
       }
     }
   }
+  .contact-us{
+    width: 100%;
+    flex-wrap: wrap !important;
+    .contact-us-loc,.contact-us-info{
+      width: 100% !important;
+      justify-content: start !important;
+      box-shadow: none !important;
+    }
+    .contact-us-loc{
+      border-bottom: 1px solid #eee;
+    }
+  }
 }
 @media (max-width: 600px) {
   .request .req-img {

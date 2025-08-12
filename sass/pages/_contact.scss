@@ -7,15 +7,21 @@
   }
 }
 .contact-us {
-  @include grid(2, 1fr);
+  @include flex(center, start);
+  flex-wrap: nowrap;
   gap: 20px;
   width: 90%;
+  height: 100%;
   margin: auto;
   .contact-us-info {
+    height: auto;
+    position: sticky;
+    top: 0;
     padding: 30px 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    @include flex(center, center);
+    @include flex(start, center);
+    height: auto;
     flex-direction: column;
     h1 {
       font-size: 1.5rem;
@@ -27,21 +33,42 @@
       gap: 5px;
       font-size: 1.2rem;
       color: #6d6d6d;
-      a{
+      a {
         color: #6d6d6d;
-        &:hover{
-            color: $snapp-green;
+        &:hover {
+          color: $snapp-green;
         }
       }
-      span{
+      span {
         cursor: pointer;
-        &:hover{
-              color: $snapp-green;
+        &:hover {
+          color: $snapp-green;
         }
       }
       h2 {
         text-align: center;
         margin: 10px auto;
+        color: $snapp-green;
+      }
+    }
+  }
+  .contact-us-loc {
+   
+    user-select: none;
+    padding: 30px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    @include flex(center, start);
+    gap: 30px;
+    flex-direction: column;
+    a,
+    p {
+      font-size: 1.2rem;
+      margin: 5px auto;
+    }
+    a {
+      cursor: pointer;
+      &:hover {
         color: $snapp-green;
       }
     }
