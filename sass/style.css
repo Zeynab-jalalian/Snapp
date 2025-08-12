@@ -1392,6 +1392,7 @@ a {
 .about-us a img {
   width: 50%;
   object-fit: cover;
+  margin: 20px auto;
 }
 
 .about-link {
@@ -1835,6 +1836,11 @@ header ul li a i {
   .about-link input,
   .about-link .send-ab {
     display: none;
+  }
+  .about-us a img {
+    width: 70%;
+    object-fit: cover;
+    margin: 20px auto;
   }
 }
 @media (max-width: 600px) {
