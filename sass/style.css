@@ -1913,6 +1913,9 @@ header ul li a i {
     padding: 20px 20px 40px 20px;
     flex-direction: column;
   }
+  .about-link h1 {
+    text-align: center;
+  }
   .about-link .res-ab {
     display: flex !important;
   }
