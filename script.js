@@ -1,5 +1,4 @@
 /* menu */
-/* menu */
 const menuToggle = document.getElementById("menu-toggle");
 const menuUl = document.querySelector(".menu-ul");
 
