@@ -196,6 +196,35 @@
     text-transform: uppercase;
     font-weight: 400;
   }
+  .category-of-join {
+    ul {
+      @include flex(center, center);
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      margin: 10px;
+      li {
+        &:hover{
+          a{
+            color: $snapp-green;
+          }
+        }
+        margin: 20px;
+        a {
+          color: #000;
+          font-size: 1.3rem;
+          font-weight: 800;
+          padding: 5px;
+        }
+        &.active {
+          a {
+            color: $snapp-green;
+          }
+
+          border-bottom: 3px solid $snapp-green;
+        }
+      }
+    }
+  }
   .join-boxes {
     text-align: left;
     margin-top: 30px;
@@ -225,7 +254,7 @@
           font-size: 1rem;
           color: $snapp-green;
         }
-        a{
+        a {
           color: $snapp-green;
           background: rgb(239 239 239);
           padding: 10px;
@@ -237,10 +266,10 @@
           align-items: center;
         }
       }
-      &:hover{
+      &:hover {
         background: $snapp-green;
-     
-        h3{
+
+        h3 {
           color: white;
         }
       }

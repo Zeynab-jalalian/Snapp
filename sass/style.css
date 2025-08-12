@@ -1651,6 +1651,32 @@ a {
   text-transform: uppercase;
   font-weight: 400;
 }
+.jobs-join .category-of-join ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.jobs-join .category-of-join ul li {
+  margin: 20px;
+}
+.jobs-join .category-of-join ul li:hover a {
+  color: #21aa58;
+}
+.jobs-join .category-of-join ul li a {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding: 5px;
+}
+.jobs-join .category-of-join ul li.active {
+  border-bottom: 3px solid #21aa58;
+}
+.jobs-join .category-of-join ul li.active a {
+  color: #21aa58;
+}
 .jobs-join .join-boxes {
   text-align: left;
   margin-top: 30px;
