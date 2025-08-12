@@ -1,4 +1,5 @@
 /* menu */
+/* menu */
 const menuToggle = document.getElementById("menu-toggle");
 const menuUl = document.querySelector(".menu-ul");
 
@@ -13,6 +14,18 @@ menuToggle.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
   menuUl.classList.remove("active");
+});
+
+
+document.addEventListener("click", (e) => {
+
+  if (
+    menuUl.classList.contains("active") &&
+    !menuUl.contains(e.target) &&
+    !menuToggle.contains(e.target)
+  ) {
+    menuUl.classList.remove("active");
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -69,6 +82,6 @@ headers.forEach((header) => {
   });
 });
 
-//joins
+
 
 
