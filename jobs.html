@@ -12,7 +12,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="sass/style.css" />
     <title>Snapp</title>
@@ -50,24 +50,41 @@
       </p>
     </div>
 
+    <div class="jobs-slider">
+      <h1>Photos</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/meeting.jpg" /></div>
+          <div class="swiper-slide"><img src="img/new_cube.jpg" /></div>
+          <div class="swiper-slide"><img src="img/car.jpg" /></div>
+          <div class="swiper-slide"><img src="img/slider1.jpg" /></div>
+          <div class="swiper-slide"><img src="img/working.jpg" /></div>
+          <div class="swiper-slide"><img src="img/workshop.png" /></div>
+          <div class="swiper-slide"><img src="img/cube.jpg" /></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
     <div class="jobs-Benefits">
       <h1>Perks & Benefits</h1>
       <h3>A selection of what we have to offer</h3>
       <div class="jobs-b-list">
         <ul>
-          <li> Online/On-site Doctor <i class="fas fa-check"></i></li>
-          <li> Snapp Credit <i class="fas fa-check"></i></li>
-          <li> Internet Allowance <i class="fas fa-check"></i></li>
+          <li>Online/On-site Doctor <i class="fas fa-check"></i></li>
+          <li>Snapp Credit <i class="fas fa-check"></i></li>
+          <li>Internet Allowance <i class="fas fa-check"></i></li>
         </ul>
         <ul>
-          <li> Time Flexibility<i class="fas fa-check"></i></li>
-          <li> In-House Training Courses<i class="fas fa-check"></i></li>
-          <li> Supplementary Health Insurance<i class="fas fa-check"></i></li>
+          <li>Time Flexibility<i class="fas fa-check"></i></li>
+          <li>In-House Training Courses<i class="fas fa-check"></i></li>
+          <li>Supplementary Health Insurance<i class="fas fa-check"></i></li>
         </ul>
         <ul>
-          <li> Hybrid Working<i class="fas fa-check"></i></li>
-          <li> Competitive Salary<i class="fas fa-check"></i></li>
-          <li> Employee Loan<i class="fas fa-check"></i></li>
+          <li>Hybrid Working<i class="fas fa-check"></i></li>
+          <li>Competitive Salary<i class="fas fa-check"></i></li>
+          <li>Employee Loan<i class="fas fa-check"></i></li>
         </ul>
       </div>
     </div>
@@ -86,7 +103,18 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2.5, 
+        centeredSlides: true, 
+        loop: true, 
+         spaceBetween: 5,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
 <!--
