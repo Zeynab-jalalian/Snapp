@@ -711,7 +711,7 @@ a {
   padding: 20px 40px;
 }
 
-.taxi-boxes {
+.exp-boxes {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -719,15 +719,15 @@ a {
   margin: 50px auto;
   width: 930px;
 }
-.taxi-boxes .taxi-box {
+.exp-boxes .exp-box {
   padding: 20px;
   border-radius: 20px;
   margin: 20px auto;
 }
-.taxi-boxes .taxi-box p {
+.exp-boxes .exp-box p {
   font-size: 1.3rem;
 }
-.taxi-boxes .taxi-box:nth-child(odd) {
+.exp-boxes .exp-box:nth-child(odd) {
   background: #ebecf2;
 }
 
@@ -1127,7 +1127,7 @@ a {
   width: 50px;
 }
 
-.taxi-box h2 {
+.exp-box h2 {
   margin: 10px auto;
   font-size: 1.5rem;
 }
