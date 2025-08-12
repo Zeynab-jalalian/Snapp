@@ -1394,6 +1394,51 @@ a {
   object-fit: cover;
 }
 
+.about-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 20px 20px 40px 20px;
+}
+.about-link h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+.about-link form {
+  margin: 30px auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+.about-link form input {
+  border: none;
+  outline: none;
+  color: #333;
+  font-size: 1.5rem;
+  background: transparent;
+  border-bottom: 1px solid #eee;
+  padding: 2px 5px;
+}
+.about-link form .res-ab {
+  display: none;
+}
+.about-link form button {
+  border: none;
+  outline: none;
+  color: white;
+  background: #21aa58;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.about-link form button:hover {
+  background: rgb(155, 255, 155);
+}
+
 header {
   background: #fff;
   position: fixed;
@@ -1775,6 +1820,21 @@ header ul li a i {
   .taxi-registration div {
     width: 100%;
     margin: 20px auto;
+  }
+  .about-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 20px 20px 40px 20px;
+    flex-direction: column;
+  }
+  .about-link .res-ab {
+    display: flex !important;
+  }
+  .about-link input,
+  .about-link .send-ab {
+    display: none;
   }
 }
 @media (max-width: 600px) {

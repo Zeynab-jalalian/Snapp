@@ -23,3 +23,50 @@
     }
   }
 }
+.about-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 20px 20px 40px 20px;
+  h1 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  form {
+    margin: 30px auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    input {
+      border: none;
+      outline: none;
+      color: #333;
+      font-size: 1.5rem;
+      background: transparent;
+      border-bottom: 1px solid #eee;
+      padding: 2px 5px;
+
+     
+    }
+    .res-ab{
+        display: none;
+    }
+    button {
+      border: none;
+      outline: none;
+      color: white;
+      background: $snapp-green;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin-right: 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+
+      &:hover {
+        background: rgb(155, 255, 155);
+      }
+    }
+  }
+}

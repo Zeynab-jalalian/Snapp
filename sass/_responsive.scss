@@ -52,7 +52,6 @@
       grid-column: 2 / 3;
       margin: auto;
     }
-   
   }
   .security {
     width: 100%;
@@ -73,10 +72,9 @@
     width: 100%;
     padding: 2%;
   }
-   .bike-home-btn{
-      flex-direction: column;
-      
-    }
+  .bike-home-btn {
+    flex-direction: column;
+  }
 }
 @media (min-width: 870px) {
   .dropdown {
@@ -298,19 +296,33 @@
       }
     }
   }
-  .taxi-registration{
+  .taxi-registration {
     flex-direction: column;
-    .taxi-reg-img{
+    .taxi-reg-img {
       order: 2;
     }
-    .taxi-reg-content{
+    .taxi-reg-content {
       order: 1;
     }
-    div{
+    div {
       width: 100%;
       margin: 20px auto;
     }
-
+  }
+  .about-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 20px 20px 40px 20px;
+    flex-direction: column;
+    .res-ab {
+      display: flex !important;
+    }
+    input,
+    .send-ab {
+      display: none;
+    }
   }
 }
 @media (max-width: 600px) {
@@ -338,11 +350,11 @@
       margin: 10px;
     }
   }
-  .video-bike{
+  .video-bike {
     width: 100%;
-   video{
-     width: 90%;
-   }
+    video {
+      width: 90%;
+    }
   }
 }
 @media (max-width: 350px) {
