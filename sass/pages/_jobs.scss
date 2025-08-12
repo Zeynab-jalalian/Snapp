@@ -180,3 +180,70 @@
     filter: brightness(40%);
   }
 }
+.jobs-join {
+  margin: 50px auto;
+  @include flex(center, center);
+  flex-direction: column;
+  h1 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 3rem;
+    color: #333;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .join-boxes {
+    text-align: left;
+    margin-top: 30px;
+    @include grid(2, 1fr);
+    gap: 20px;
+    .join-box {
+      cursor: pointer;
+      border: 1px solid #747474;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: end;
+      h3 {
+        font-size: 1.3rem;
+        color: #333;
+      }
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 20px;
+        h3 {
+          font-size: 1rem;
+          color: $snapp-green;
+        }
+        a{
+          color: $snapp-green;
+          background: rgb(239 239 239);
+          padding: 10px;
+          border-radius: 5px;
+          font-weight: 800;
+          font-size: 1.2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      &:hover{
+        background: $snapp-green;
+     
+        h3{
+          color: white;
+        }
+      }
+    }
+  }
+}

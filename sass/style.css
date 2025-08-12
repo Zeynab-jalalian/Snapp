@@ -1632,6 +1632,76 @@ a {
   filter: brightness(40%);
 }
 
+.jobs-join {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.jobs-join h1 {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: 3rem;
+  color: #333;
+  text-transform: uppercase;
+}
+.jobs-join h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.jobs-join .join-boxes {
+  text-align: left;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.jobs-join .join-boxes .join-box {
+  cursor: pointer;
+  border: 1px solid #747474;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.jobs-join .join-boxes .join-box h3 {
+  font-size: 1.3rem;
+  color: #333;
+}
+.jobs-join .join-boxes .join-box div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.jobs-join .join-boxes .join-box div h3 {
+  font-size: 1rem;
+  color: #21aa58;
+}
+.jobs-join .join-boxes .join-box div a {
+  color: #21aa58;
+  background: rgb(239, 239, 239);
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jobs-join .join-boxes .join-box:hover {
+  background: #21aa58;
+}
+.jobs-join .join-boxes .join-box:hover h3 {
+  color: white;
+}
+
 header {
   background: #fff;
   position: fixed;
@@ -1801,6 +1871,13 @@ header ul li a i {
   }
   .bike-home-btn {
     flex-direction: column;
+  }
+  .join-boxes {
+    text-align: left;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 20px;
   }
 }
 @media (min-width: 870px) {
