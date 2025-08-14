@@ -90,6 +90,11 @@
       }
     }
   }
+  .moving-form img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
 }
 @media (min-width: 870px) {
   .dropdown {

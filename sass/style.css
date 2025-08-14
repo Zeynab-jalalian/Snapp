@@ -1973,6 +1973,20 @@ a {
   border-right: 1px solid #ccc;
 }
 
+.moving-form {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.moving-form img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
 header {
   background: #fff;
   position: fixed;
@@ -2156,6 +2170,11 @@ header ul li a i {
   }
   .home-blog .home-left h1 {
     font-size: 1.5rem;
+  }
+  .moving-form img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 @media (min-width: 870px) {

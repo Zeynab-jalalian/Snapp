@@ -1,0 +1,11 @@
+.moving-form{
+    margin: 30px auto;
+    @include flex(center,center);
+    flex-direction: column;
+    gap: 20px;
+    img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
