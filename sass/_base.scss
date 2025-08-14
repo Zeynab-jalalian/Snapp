@@ -188,3 +188,41 @@ a {
     background: rgba(255, 225, 225, 0.753);
   }
 }
+.btn-shop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  background: purple;
+  color: $white;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  transition: 0.2s;
+  text-align: center;
+  &:hover {
+    background: rgb(173, 0, 173);
+  }
+}
+.btn-shop2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  color:purple  ;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background: rgba(255, 225, 225, 0.753);
+  }
+}
