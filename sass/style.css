@@ -1122,6 +1122,66 @@ a {
 .home-right-flight {
   background: linear-gradient(to bottom right, rgba(255, 21, 60, 0.877), rgb(255, 25, 63)) !important;
 }
+.home-right-flight form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-right-flight form .home-loc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  color: #474747;
+  padding: 15px;
+  width: 100%;
+}
+.home-right-flight form .home-loc .home-loc-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+.home-right-flight form .home-loc svg {
+  width: 35px;
+  cursor: pointer;
+}
+.home-right-flight form .home-date {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px auto;
+  color: #474747;
+}
+.home-right-flight form .home-num {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  color: #474747;
+}
+.home-right-flight form .home-num div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 .badge-flight img {
   width: 50px;

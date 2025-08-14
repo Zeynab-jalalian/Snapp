@@ -4,6 +4,56 @@
     rgba(255, 21, 60, 0.877),
     rgb(255, 25, 63)
   ) !important;
+  form {
+    @include flex(center, center);
+    flex-direction: column;
+    .home-loc {
+      .home-loc-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+      }
+      @include flex(space-between, center);
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      color: #474747;
+      padding: 15px;
+      width: 100%;
+      svg {
+        width: 35px;
+        cursor: pointer;
+      }
+    }
+    .home-date {
+      @include flex(center, start);
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px auto;
+      color: #474747;
+    }
+    .home-num {
+      @include flex(center, start);
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      color: #474747;
+      div{
+        @include flex(center,center);
+        gap: 10px;
+      }
+    }
+  }
 }
 .badge-flight {
   img {
