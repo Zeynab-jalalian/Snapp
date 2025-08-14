@@ -82,6 +82,14 @@
     grid-template-columns: repeat(1, 1fr) !important;
     gap: 20px;
   }
+  .home-blog{
+    @include grid(1,1fr);
+    .home-left{
+      h1{
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 @media (min-width: 870px) {
   .dropdown {
