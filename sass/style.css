@@ -2054,6 +2054,66 @@ a {
   margin: 20px;
 }
 
+.shop-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 50px auto;
+}
+.shop-boxes .shop-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 30px;
+  background: #eee;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+}
+.shop-boxes .shop-box img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.shop-boxes2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 30px auto;
+}
+.shop-boxes2 div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.shop-boxes2 div .shop-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 30px;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+}
+.shop-boxes2 div .shop-box img {
+  width: 150px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
 header {
   background: #fff;
   position: fixed;
