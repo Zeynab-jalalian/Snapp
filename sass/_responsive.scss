@@ -195,6 +195,9 @@
   .home .home-right form {
     display: none;
   }
+  .home .home-right-flight form{
+    display: flex !important;
+  }
 
   header {
     .dropdown {
