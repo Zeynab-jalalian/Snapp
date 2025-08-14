@@ -1929,6 +1929,50 @@ a {
   user-select: text;
 }
 
+.pt-loc {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2%;
+  flex-direction: column;
+  gap: 20px;
+}
+.pt-loc div h1 {
+  text-align: center;
+}
+.pt-loc div h2 {
+  font-size: 1.2rem;
+  margin: 10px auto;
+  color: #474747;
+  text-align: right;
+}
+.pt-loc table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.pt-loc table thead {
+  font-size: 1.2rem;
+  color: #21aa58;
+}
+.pt-loc table thead tr {
+  border-bottom: 3px solid #21aa58;
+}
+.pt-loc table thead th {
+  text-align: right;
+  padding: 8px;
+}
+.pt-loc table tbody {
+  font-size: 1.2rem;
+}
+.pt-loc table tbody tr td, .pt-loc table tbody tr th {
+  padding: 8px;
+}
+.pt-loc table tbody tr td:first-child {
+  border-right: 1px solid #ccc;
+}
+
 header {
   background: #fff;
   position: fixed;
