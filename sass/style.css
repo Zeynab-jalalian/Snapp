@@ -242,6 +242,46 @@ a {
   background: rgba(255, 225, 225, 0.753);
 }
 
+.btn-credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  background: #009bd8;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  transition: 0.2s;
+  text-align: center;
+}
+.btn-credit:hover {
+  background: #4ecdff;
+}
+
+.btn-credit2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  color: #009bd8;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-credit2:hover {
+  background: #abe7ff;
+}
+
 .home {
   margin-top: 100px;
   display: grid;
@@ -2395,6 +2435,86 @@ a {
   border-radius: 15px;
   margin-bottom: 10px;
   object-fit: cover;
+}
+
+.home-right-credit {
+  background: #009bd8 !important;
+}
+.home-right-credit h3 {
+  font-size: 1.5rem;
+  margin: 10px auto;
+}
+.home-right-credit p {
+  font-size: 1.3rem !important;
+}
+
+.credit-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+.credit-form img {
+  width: 60%;
+}
+
+.req-credit .req-img img {
+  border-radius: 10px;
+}
+
+.credit-shops {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 50px auto;
+}
+.credit-shops div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.credit-shops div .credit-shop {
+  cursor: pointer;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.credit-shops div .credit-shop img {
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.credit-shops div .credit-shop h3 {
+  font-size: 1.4rem;
+}
+
+.video-credit {
+  margin: 30px auto;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  background: rgb(230, 244, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-credit video {
+  width: 70%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.sec-left-credit {
+  background: rgb(230, 244, 255) !important;
+}
+
+.sec-right-credit:hover {
+  background: #009bd8 !important;
 }
 
 header {

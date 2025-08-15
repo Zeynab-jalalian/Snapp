@@ -226,3 +226,41 @@ a {
     background: rgba(255, 225, 225, 0.753);
   }
 }
+.btn-credit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  background: #009bd8;
+  color: $white;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  transition: 0.2s;
+  text-align: center;
+  &:hover {
+    background: #4ecdff;
+  }
+}
+.btn-credit2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  color:#009bd8  ;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background: #abe7ff;
+  }
+}
