@@ -23,8 +23,8 @@
     border-bottom: 1px solid #ddd;
   }
   .blog-body {
-  display: grid;
-  grid-template-columns: 1fr !important;
+    display: grid;
+    grid-template-columns: 1fr !important;
   }
 }
 @media (max-width: 1000px) {
@@ -288,6 +288,12 @@
           }
         }
       }
+    }
+  }
+  .footer-blog {
+    .logo {
+      padding: 20px;
+      width: 100%;
     }
   }
 }
