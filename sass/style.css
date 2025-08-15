@@ -1969,6 +1969,63 @@ a {
   user-select: text;
 }
 
+.view-blog {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  margin: 50px auto;
+  padding: 20px;
+}
+.view-blog .view-blog-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.view-blog .view-blog-boxes .v-b-b {
+  cursor: pointer;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.view-blog .view-blog-boxes .v-b-b img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.view-blog .view-blog-boxes .v-b-b div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+.view-blog .view-blog-boxes .v-b-b div a {
+  color: #21aa58;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 10px 15px;
+  user-select: text;
+}
+.view-blog .view-blog-boxes .v-b-b p {
+  color: #333;
+  font-size: 1.3rem;
+  padding: 20px;
+}
+.view-blog .view-blog-boxes .v-b-b span {
+  padding: 0 20px;
+  color: #474747;
+}
+
 .pt-loc {
   width: 80%;
   margin: auto;
