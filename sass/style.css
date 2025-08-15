@@ -1979,6 +1979,7 @@ a {
   padding: 20px;
 }
 .view-blog .view-blog-boxes {
+  flex-wrap: wrap;
   margin: 20px;
   display: flex;
   justify-content: center;
@@ -1988,6 +1989,7 @@ a {
 .view-blog .view-blog-boxes .v-b-b {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  width: 400px;
   height: 400px;
   margin: 10px;
   border-radius: 20px;
@@ -2031,8 +2033,9 @@ a {
 
 .cat-blog {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin: 20px;
 }
 .cat-blog .c-blog {
@@ -2044,10 +2047,10 @@ a {
   margin: 10px;
 }
 .cat-blog .c-blog img {
-  width: 150px !important;
-  height: 150px !important;
-  border-radius: 50% !important;
-  object-fit: cover !important;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 10px;
 }
 .cat-blog .c-blog h1 {
