@@ -36,13 +36,13 @@
   @include flex(center, start);
   flex-direction: column;
   gap: 10px;
-  h1{
+  h1 {
     padding: 20px;
     display: block;
   }
   .blog1-boxes {
-    padding:10px;
-   @include grid(2,1fr);
+    padding: 10px;
+    @include grid(2, 1fr);
     margin: 20px;
     .blog1-box {
       cursor: pointer;
@@ -86,59 +86,58 @@
     }
   }
 }
-.cat-blog{
-  @include flex(space-around,center);
+.cat-blog {
+  @include flex(space-around, center);
   flex-wrap: wrap;
   margin: 20px;
- .c-blog{
-  @include flex(center,center);
-  flex-direction: column;
-  h1{
-    font-size: 1.5rem;
-    margin: 5px auto;
+  .c-blog {
+    margin: 20px;
+    @include flex(center, center);
+    flex-direction: column;
+    h1 {
+      font-size: 1.5rem;
+      margin: 5px auto;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
   }
-  img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
- }
-
 }
-.blog2{
+.blog2 {
   margin-top: 30px;
-  @include flex(center,center);
+  @include flex(center, center);
   flex-direction: column;
   gap: 20px;
-  .blog-head{
+  .blog-head {
     padding: 2%;
     width: 100%;
-    @include flex(space-between,center);
-    color: $snapp-green;
-    font-size:1rem;
-    a{
+    @include flex(space-between, center);
+    font-size: 1rem;
+    a {
       color: $snapp-green;
     }
   }
-  .blog-body{
+  .blog-body {
     margin: 10px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 2%;
-    div{
+    div {
       cursor: pointer;
-      display:flex;
+      display: flex;
       justify-content: center;
       align-items: start;
       flex-direction: column;
       gap: 10px;
       padding: 10px;
-      h1{
+      h1 {
         font-size: 1.5rem;
       }
-      img{
+      img {
         border-radius: 20px;
         width: 100%;
         height: 300px;
@@ -147,27 +146,27 @@
     }
   }
 }
-.blog3{
-  @include flex(center,center);
+.blog3 {
+  @include flex(center, center);
   flex-wrap: wrap;
   margin: 10px;
   padding: 20px;
-  .blog3-box{
+  .blog3-box {
     width: 500px;
     padding: 20px;
     cursor: pointer;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     margin: 20px;
-    @include flex(start,center);
+    @include flex(start, center);
     gap: 10px;
     border-radius: 20px;
-    img{
+    img {
       width: 100px;
       height: 100px;
       border-radius: 20px;
       object-fit: cover;
     }
-    h2{
+    h2 {
       font-size: 1.3rem;
       margin: 5px auto;
     }

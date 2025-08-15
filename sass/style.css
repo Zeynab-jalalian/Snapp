@@ -2040,6 +2040,7 @@ a {
   margin: 20px;
 }
 .cat-blog .c-blog {
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2070,7 +2071,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #21aa58;
   font-size: 1rem;
 }
 .blog2 .blog-head a {
