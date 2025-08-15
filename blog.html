@@ -102,23 +102,23 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var viewBlogSwiper = new Swiper(".view-blog", {
         slidesPerView: 4,
         spaceBetween: 20,
-        loop: true,
         breakpoints: {
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
+          0: { slidesPerView: 1, spaceBetween: 10 },
+          768: { slidesPerView: 2, spaceBetween: 15 },
+          1024: { slidesPerView: 4, spaceBetween: 20 },
+        },
+      });
+
+      var catBlogSwiper = new Swiper(".cat-blog", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        breakpoints: {
+          0: { slidesPerView: 1, spaceBetween: 10 },
+          768: { slidesPerView: 2, spaceBetween: 15 },
+          1024: { slidesPerView: 4, spaceBetween: 20 },
         },
       });
     </script>
