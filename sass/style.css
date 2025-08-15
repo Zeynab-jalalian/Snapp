@@ -2517,6 +2517,16 @@ a {
   background: #009bd8 !important;
 }
 
+.s-b-c {
+  flex-direction: column !important;
+}
+.s-b-c div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 header {
   background: #fff;
   position: fixed;

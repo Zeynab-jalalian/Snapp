@@ -76,3 +76,10 @@
     background: #009bd8 !important ;
   }
 }
+.s-b-c{
+  flex-direction: column !important;
+  div{
+    @include flex(center,center);
+    flex-wrap: wrap;
+  }
+}
