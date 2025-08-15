@@ -29,10 +29,10 @@
       </div>
     </div>
 
-    <div class="view-blog">
+    <div class="swiper mySwiper view-blog">
       <h1>پربازدیدترین ها</h1>
-      <div class="view-blog-boxes">
-        <div class="v-b-b">
+      <div class="swiper-wrapper view-blog-boxes">
+        <div class="swiper-slide v-b-b">
           <img src="img/vb.jpg" />
           <div>
             <a href="#">امنیت</a>
@@ -43,22 +43,85 @@
           </p>
           <span>۲۷ آذر ۱۴۰۳</span>
         </div>
-        <div class="v-b-b">
-          <img src="img/vb.jpg" />
+        <div class="swiper-slide v-b-b">
+          <img src="img/vb2.jpg" />
+          <div>
+            <a href="#">آموزشی</a>
+          </div>
+          <p>چرا امتیازدهی دقیق شما کیفیت سفرهای اسنپ را بهتر می‌کند؟</p>
+          <span>۳ مهر ۱۴۰۳</span>
+        </div>
+        <div class="swiper-slide v-b-b">
+          <img src="img/vb3.jpg" />
           <div>
             <a href="#">امنیت</a>
-            <a href="#">خبر</a>
           </div>
-          <p>
-            شناسایی و پیگیری «انحراف از مسیر»، قابلیت امنیتی جدید اپلیکیشن اسنپ
-          </p>
-          <span>۲۷ آذر ۱۴۰۳</span>
+          <p>روند تأیید صلاحیت و نظارت بر عملکرد کاربران راننده‌ی اسنپ</p>
+          <span>۲۸ مرداد ۱۴۰۳</span>
+        </div>
+        <div class="swiper-slide v-b-b">
+          <img src="img/vb4.jpg" />
+          <div>
+            <a href="#">آموزشی</a>
+            <a href="#">امنیت</a>
+          </div>
+          <p>افزایش امنیت کاربران راننده اسنپ با سرویس «امنیت سفر»</p>
+          <span>۲۷ خرداد ۱۴۰۳</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper cat-blog">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide c-blog">
+          <img src="img/cb1.jpg" />
+          <h1>تفریح و سرگرمی</h1>
+        </div>
+        <div class="swiper-slide c-blog">
+          <img src="img/cb2.jpg" />
+          <h1>حمایت اجتماعی</h1>
+        </div>
+        <div class="swiper-slide c-blog">
+          <img src="img/cb3.jpg" />
+          <h1>رستوران ها</h1>
+        </div>
+        <div class="swiper-slide c-blog">
+          <img src="img/cb4.jpg" />
+          <h1>دانستنی های سفر</h1>
+        </div>
+        <div class="swiper-slide c-blog">
+          <img src="img/cb5.jpg" />
+          <h1>آموزشی</h1>
+        </div>
+        <div class="swiper-slide c-blog">
+          <img src="img/cb6.jpg" />
+          <h1>خبر</h1>
         </div>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
 <!--

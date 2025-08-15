@@ -1979,6 +1979,7 @@ a {
   padding: 20px;
 }
 .view-blog .view-blog-boxes {
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1986,9 +1987,8 @@ a {
 }
 .view-blog .view-blog-boxes .v-b-b {
   cursor: pointer;
-  width: 400px;
   height: 400px;
-  margin: 20px;
+  margin: 10px;
   border-radius: 20px;
   padding: 20px;
   display: flex;
@@ -2024,6 +2024,32 @@ a {
 .view-blog .view-blog-boxes .v-b-b span {
   padding: 0 20px;
   color: #474747;
+}
+
+.cat-blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+.cat-blog .c-blog {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 30px;
+}
+.cat-blog .c-blog img {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  margin-bottom: 10px;
+}
+.cat-blog .c-blog h1 {
+  font-size: 1.5rem;
 }
 
 .pt-loc {
