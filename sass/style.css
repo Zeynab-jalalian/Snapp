@@ -2251,14 +2251,6 @@ a {
 .header-blog ul li a:hover {
   color: #21aa58;
 }
-.header-blog .header-web {
-  background: rgba(216, 255, 216, 0.801);
-  color: #21aa58;
-  padding: 15px;
-  border-radius: 15px;
-  margin-left: auto;
-  font-size: 1.3rem;
-}
 
 .pt-loc {
   width: 80%;
