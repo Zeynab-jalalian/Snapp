@@ -32,73 +32,111 @@
   }
 }
 .view-blog {
-  @include flex(center, start) ;
-  flex-direction: column ;
-  gap: 20px ;
-  margin: 50px auto ;
-  padding: 20px ;
+  @include flex(center, start);
+  flex-direction: column;
+  gap: 20px;
+  margin: 50px auto;
+  padding: 20px;
   .view-blog-boxes {
-    margin: 20px ;
-    @include flex(center, center) ;
-    gap: 20px ;
+    margin: 20px;
+    @include flex(center, center);
+    gap: 20px;
     .v-b-b {
-      box-shadow: 0 0 5px rgba(0,0,0,0.5);
-      cursor: pointer ;
-      height: 400px ;
-      margin: 10px ;
-      border-radius: 20px ;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      height: 400px;
+      margin: 10px;
+      border-radius: 20px;
       @include flex(center, start);
-      flex-direction: column ;
+      flex-direction: column;
       img {
-        width: 100% ;
-        height: 100% ;
-        object-fit: cover ;
-        border-radius: 20px 20px 0 0 ;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
       }
       div {
-        @include flex(center, center) ;
-        gap: 10px ;
-        margin: 10px ;
+        @include flex(center, center);
+        gap: 10px;
+        margin: 10px;
         a {
-          color: $snapp-green ;
-          background: rgba(255, 255, 255, 0.3) ;
-          border-radius: 10px ;
-          padding: 10px 15px ;
+          color: $snapp-green;
+          background: rgba(255, 255, 255, 0.3);
+          border-radius: 10px;
+          padding: 10px 15px;
           display: block;
-          user-select: text ;
+          user-select: text;
         }
       }
       p {
-        color: #333 ;
-        font-size: 1.3rem ;
-        padding: 20px ;
+        color: #333;
+        font-size: 1.3rem;
+        padding: 20px;
         display: block;
       }
       span {
-        padding: 0 20px ;
-        color: #474747 ;
+        padding: 0 20px;
+        color: #474747;
         display: block;
       }
     }
   }
 }
-.cat-blog{
-  @include flex(center,center);
+.cat-blog {
+  @include flex(center, center);
   margin: 20px;
-  .c-blog{
+  .c-blog {
     cursor: pointer;
-    @include flex(center,center);
+    @include flex(center, center);
     flex-direction: column;
-   margin: 10px;
-    img{
+    margin: 10px;
+    img {
       width: 150px !important;
       height: 150px !important;
       border-radius: 50% !important;
       object-fit: cover !important;
       margin-bottom: 10px;
     }
-    h1{
+    h1 {
       font-size: 1.5rem;
+    }
+  }
+}
+.blog1 {
+  margin: 20px auto;
+  padding: 2%;
+  @include flex(center, center);
+  flex-direction: column;
+  .blog-head {
+    width: 100%;
+    @include flex(space-between, center);
+    a {
+      color: $snapp-green;
+      font-size: 1.1rem;
+      gap: 5px;
+    }
+  }
+  .blog-body {
+    @include grid(2, 1fr);
+    gap: 20px;
+    padding: 2%;
+    div {
+      cursor: pointer;
+      gap: 10px;
+      padding: 10px;
+      @include flex(center, start);
+      flex-direction: column;
+      margin: 10px;
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px;
+      }
+      span {
+        color: #474747;
+      }
     }
   }
 }

@@ -270,6 +270,10 @@
       }
     }
   }
+    .blog-body {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    }
 }
 @media (max-width: 840px) {
   .app-boxes ul li div p {
