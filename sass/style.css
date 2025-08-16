@@ -2900,6 +2900,27 @@ header .logo a svg {
   align-items: center;
 }
 
+.header-hotel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.home-hotel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin: 10px auto;
+}
+.home-hotel img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+
 header {
   background: #fff;
   position: fixed;
@@ -3437,6 +3458,11 @@ header ul li a i {
   }
   .documents-d .doc-contents .doc-content h3 {
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .home-hotel {
+    display: none;
   }
 }
 @media (max-width: 600px) {

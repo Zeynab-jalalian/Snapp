@@ -482,6 +482,11 @@
     }
   }
 }
+@media(max-width:768px){
+  .home-hotel{
+    display: none;
+  }
+}
 @media (max-width: 600px) {
   .request .req-img {
     width: 70%;
