@@ -2822,6 +2822,59 @@ header .logo a svg {
   color: #454545;
 }
 
+.documents-d {
+  padding: 20px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.documents-d h3 {
+  font-size: 1.4rem;
+  margin: 10px auto;
+  color: #474747;
+}
+.documents-d .doc-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.documents-d .doc-options .doc-option {
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  opacity: 0.7;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.documents-d .doc-options .doc-option.active {
+  opacity: 1;
+  border: 1px solid blue;
+  transform: scale(1.2);
+}
+.documents-d .doc-options .doc-option.active:hover {
+  background: transparent;
+}
+.documents-d .doc-options .doc-option:hover {
+  background: rgb(189, 212, 255);
+}
+.documents-d .doc-options .doc-option img {
+  width: 150px;
+}
+.documents-d .doc-options .doc-option h3 {
+  font-size: 1.3rem;
+}
+.documents-d .doc-contents {
+  display: flex;
+}
+
 header {
   background: #fff;
   position: fixed;

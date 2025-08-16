@@ -114,7 +114,7 @@ header {
   }
 }
 .user-driver {
-    padding: 20px;
+  padding: 20px;
   margin: 40px auto;
   @include flex(center, center);
   flex-direction: column;
@@ -233,7 +233,7 @@ header {
   }
 }
 .benefits-driver {
-    padding: 20px;
+  padding: 20px;
   h3 {
     font-size: 1.4rem;
     margin: 10px auto;
@@ -280,5 +280,51 @@ header {
         color: #454545;
       }
     }
+  }
+}
+.documents-d {
+  padding: 20px;
+  h3 {
+    font-size: 1.4rem;
+    margin: 10px auto;
+    color: #474747;
+  }
+  margin: 40px auto;
+  @include flex(center, center);
+  flex-direction: column;
+  .doc-options {
+    @include flex(center, center);
+    margin: 20px;
+    .doc-option {
+        &.active{
+            opacity: 1;
+            border: 1px solid blue;
+            transform: scale(1.2);
+            &:hover{
+                background: transparent;
+            }
+        }
+        border: 1px solid transparent;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 10px;
+      opacity: 0.7;
+      margin: 30px;
+      @include flex(center, center);
+      flex-direction: column;
+      gap: 10px;
+      &:hover {
+        background: rgb(189, 212, 255);
+      }
+      img {
+        width: 150px;
+      }
+      h3 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .doc-contents{
+  display: flex;
   }
 }
