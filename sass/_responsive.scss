@@ -449,6 +449,14 @@
   .home-driver .h-d-r h1 {
     font-size: 1.6rem;
   }
+  .footer-driver{
+    .f-d-3{
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+  }
 }
 @media (max-width: 600px) {
   .request .req-img {

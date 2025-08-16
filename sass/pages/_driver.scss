@@ -11,7 +11,7 @@ header {
   width: 80%;
   margin: auto;
   margin-top: 100px;
- @include flex(center,center);
+  @include flex(center, center);
   .h-d-r,
   .h-d-l {
     width: 50%;
@@ -55,6 +55,62 @@ header {
       cursor: pointer;
       &:hover {
         background: rgb(76, 76, 255);
+      }
+    }
+  }
+}
+.footer-driver {
+  background: #252a3c;
+  padding: 2%;
+  .f-d-1 {
+    @include flex(space-between, center);
+    a {
+      margin: 10px;
+      color: #333;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      svg {
+        width: 20px;
+      }
+    }
+  }
+  .f-d-2 {
+    @include flex(start, start);
+    flex-direction: column;
+    margin: 10px;
+    a {
+      display: inline-block;
+      margin: 20px;
+      color: white;
+      font-size: 1.3rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .f-d-3 {
+    margin-top: 30px;
+    padding: 20px;
+    @include flex(space-between, center);
+    p {
+      font-size: 1.2rem;
+      color: white;
+    }
+    div {
+      @include flex(center, center);
+      gap: 10px;
+      a {
+        margin: 10px;
+        display: inline-block;
+        svg {
+          width: 20px;
+          filter: brightness(0) invert(1);
+        }
       }
     }
   }

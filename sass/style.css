@@ -2590,6 +2590,71 @@ header .logo a svg {
   background: rgb(76, 76, 255);
 }
 
+.footer-driver {
+  background: #252a3c;
+  padding: 2%;
+}
+.footer-driver .f-d-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-driver .f-d-1 a {
+  margin: 10px;
+  color: #333;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.footer-driver .f-d-1 a svg {
+  width: 20px;
+}
+.footer-driver .f-d-2 {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin: 10px;
+}
+.footer-driver .f-d-2 a {
+  display: inline-block;
+  margin: 20px;
+  color: white;
+  font-size: 1.3rem;
+}
+.footer-driver .f-d-2 a:hover {
+  text-decoration: underline;
+}
+.footer-driver .f-d-3 {
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-driver .f-d-3 p {
+  font-size: 1.2rem;
+  color: white;
+}
+.footer-driver .f-d-3 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer-driver .f-d-3 div a {
+  margin: 10px;
+  display: inline-block;
+}
+.footer-driver .f-d-3 div a svg {
+  width: 20px;
+  filter: brightness(0) invert(1);
+}
+
 header {
   background: #fff;
   position: fixed;
@@ -3103,6 +3168,12 @@ header ul li a i {
   }
   .home-driver .h-d-r h1 {
     font-size: 1.6rem;
+  }
+  .footer-driver .f-d-3 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 }
 @media (max-width: 600px) {
