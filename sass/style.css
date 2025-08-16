@@ -2654,6 +2654,7 @@ header .logo a svg {
 }
 
 .user-driver {
+  padding: 20px;
   margin: 40px auto;
   display: flex;
   justify-content: center;
@@ -2673,7 +2674,7 @@ header .logo a svg {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  width: 350px;
+  max-width: 350px;
   height: 350px;
   border: 1px solid rgba(119, 119, 119, 0.4666666667);
   border-radius: 20px;
@@ -2767,6 +2768,7 @@ header .logo a svg {
 }
 
 .benefits-driver {
+  padding: 20px;
   margin: 40px auto;
   display: flex;
   justify-content: center;
@@ -2791,7 +2793,7 @@ header .logo a svg {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  width: 400px;
+  max-width: 400px;
   height: 250px;
   border: 1px solid rgba(119, 119, 119, 0.4666666667);
   border-radius: 20px;

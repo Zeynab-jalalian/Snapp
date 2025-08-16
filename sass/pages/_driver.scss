@@ -114,6 +114,7 @@ header {
   }
 }
 .user-driver {
+    padding: 20px;
   margin: 40px auto;
   @include flex(center, center);
   flex-direction: column;
@@ -127,7 +128,7 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: start;
-      width: 350px;
+      max-width: 350px;
       height: 350px;
       border: 1px solid #7777;
       border-radius: 20px;
@@ -232,6 +233,7 @@ header {
   }
 }
 .benefits-driver {
+    padding: 20px;
   h3 {
     font-size: 1.4rem;
     margin: 10px auto;
@@ -250,7 +252,7 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: start;
-      width: 400px;
+      max-width: 400px;
       height: 250px;
       border: 1px solid #7777;
       border-radius: 20px;
