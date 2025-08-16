@@ -2527,6 +2527,69 @@ a {
   flex-wrap: wrap;
 }
 
+header .logo a svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-driver {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-driver .h-d-r,
+.home-driver .h-d-l {
+  width: 50%;
+  height: 100%;
+}
+.home-driver .h-d-r {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+.home-driver .h-d-r h1 {
+  font-size: 2.5rem;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.home-driver .h-d-r p {
+  font-size: 1.5rem;
+  color: #474747;
+  margin-bottom: 20px;
+}
+.home-driver .h-d-r input {
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 5px;
+  width: 70%;
+  height: 45px;
+  font-size: 1.3rem;
+  padding-right: 10px;
+}
+.home-driver .h-d-r button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 70%;
+  height: 45px;
+  font-size: 1.3rem;
+  background: blue;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.home-driver .h-d-r button:hover {
+  background: rgb(76, 76, 255);
+}
+
 header {
   background: #fff;
   position: fixed;
@@ -2735,6 +2798,18 @@ header ul li a i {
     width: 70%;
     height: 100%;
     object-fit: cover;
+  }
+  .home-driver {
+    flex-direction: column;
+  }
+  .home-driver .h-d-l {
+    width: 80% !important;
+  }
+  .home-driver .h-d-r {
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 @media (min-width: 870px) {
@@ -3026,6 +3101,9 @@ header ul li a i {
     display: grid;
     grid-template-columns: 1fr !important;
   }
+  .home-driver .h-d-r h1 {
+    font-size: 1.6rem;
+  }
 }
 @media (max-width: 600px) {
   .request .req-img {
@@ -3034,6 +3112,13 @@ header ul li a i {
   .blog1 .blog1-boxes .blog1-box img,
   .blog-body div img {
     height: 200px;
+  }
+  .home-driver input,
+  button {
+    width: 80% !important;
+  }
+  .home-driver .h-d-l {
+    width: 90% !important;
   }
 }
 @media (max-width: 480px) {

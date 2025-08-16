@@ -1,0 +1,61 @@
+header {
+  .logo {
+    a {
+      svg {
+        @include flex(center, center);
+      }
+    }
+  }
+}
+.home-driver {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+ @include flex(center,center);
+  .h-d-r,
+  .h-d-l {
+    width: 50%;
+    height: 100%;
+  }
+  .h-d-r {
+    @include flex(center, start);
+    flex-direction: column;
+    gap: 10px;
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 7px;
+      margin-bottom: 7px;
+    }
+    p {
+      font-size: 1.5rem;
+      color: #474747;
+      margin-bottom: 20px;
+    }
+    input {
+      outline: none;
+      border: 1px solid #333;
+      border-radius: 5px;
+      padding: 5px;
+      width: 70%;
+      height: 45px;
+      font-size: 1.3rem;
+      padding-right: 10px;
+    }
+    button {
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      width: 70%;
+      height: 45px;
+      font-size: 1.3rem;
+      background: blue;
+      color: white;
+      margin-top: 10px;
+      cursor: pointer;
+      &:hover {
+        background: rgb(76, 76, 255);
+      }
+    }
+  }
+}

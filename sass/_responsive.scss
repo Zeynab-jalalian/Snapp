@@ -115,6 +115,18 @@
     height: 100%;
     object-fit: cover;
   }
+  .home-driver {
+    flex-direction: column;
+    .h-d-l {
+      width: 80% !important;
+    }
+    .h-d-r {
+      width: 100% !important;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
 }
 @media (min-width: 870px) {
   .dropdown {
@@ -434,6 +446,9 @@
     display: grid;
     grid-template-columns: 1fr !important;
   }
+  .home-driver .h-d-r h1 {
+    font-size: 1.6rem;
+  }
 }
 @media (max-width: 600px) {
   .request .req-img {
@@ -442,6 +457,13 @@
   .blog1 .blog1-boxes .blog1-box img,
   .blog-body div img {
     height: 200px;
+  }
+  .home-driver input,
+  button {
+    width: 80% !important;
+  }
+  .home-driver .h-d-l {
+    width: 90% !important;
   }
 }
 @media (max-width: 480px) {
