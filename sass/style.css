@@ -2766,6 +2766,60 @@ header .logo a svg {
   border-radius: 0 0 20px 20px;
 }
 
+.benefits-driver {
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.benefits-driver h3 {
+  font-size: 1.4rem;
+  margin: 10px auto;
+  color: #474747;
+}
+.benefits-driver .ben-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.benefits-driver .ben-boxes .ben-box {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 400px;
+  height: 250px;
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+  border-radius: 20px;
+  padding: 30px 10px;
+}
+.benefits-driver .ben-boxes .ben-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.benefits-driver .ben-boxes .ben-box div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.benefits-driver .ben-boxes .ben-box div p {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+}
+.benefits-driver .ben-boxes .ben-box p {
+  font-size: 1.3rem;
+  color: #454545;
+}
+
 header {
   background: #fff;
   position: fixed;
