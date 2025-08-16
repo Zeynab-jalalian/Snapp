@@ -449,12 +449,36 @@
   .home-driver .h-d-r h1 {
     font-size: 1.6rem;
   }
-  .footer-driver{
-    .f-d-3{
+  .footer-driver {
+    .f-d-3 {
       flex-direction: column;
       justify-content: center;
       text-align: center;
       align-items: center;
+    }
+  }
+  .documents-d {
+    .doc-options{
+      .doc-option{
+        img{
+          width: 100px;
+        }
+        h3{
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .doc-contents{
+      width: 100%;
+      .doc-content{
+        padding: 20px;
+        h1{
+          font-size: 1.3rem;
+        }
+        h3{
+          font-size: 1.1rem;
+        }
+      }
     }
   }
 }
@@ -472,6 +496,19 @@
   }
   .home-driver .h-d-l {
     width: 90% !important;
+  }
+  .documents-d {
+    .doc-options{
+      .doc-option{
+        margin: 5px;
+        img{
+          width: 50px;
+        }
+        h3{
+          font-size: 1rem;
+        }
+      }
+    }
   }
 }
 @media (max-width: 480px) {

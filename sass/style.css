@@ -2831,9 +2831,13 @@ header .logo a svg {
   flex-direction: column;
 }
 .documents-d h3 {
+  text-align: center;
   font-size: 1.4rem;
   margin: 10px auto;
   color: #474747;
+}
+.documents-d h1 {
+  text-align: center;
 }
 .documents-d .doc-options {
   display: flex;
@@ -3416,6 +3420,24 @@ header ul li a i {
     text-align: center;
     align-items: center;
   }
+  .documents-d .doc-options .doc-option img {
+    width: 100px;
+  }
+  .documents-d .doc-options .doc-option h3 {
+    font-size: 1.1rem;
+  }
+  .documents-d .doc-contents {
+    width: 100%;
+  }
+  .documents-d .doc-contents .doc-content {
+    padding: 20px;
+  }
+  .documents-d .doc-contents .doc-content h1 {
+    font-size: 1.3rem;
+  }
+  .documents-d .doc-contents .doc-content h3 {
+    font-size: 1.1rem;
+  }
 }
 @media (max-width: 600px) {
   .request .req-img {
@@ -3431,6 +3453,15 @@ header ul li a i {
   }
   .home-driver .h-d-l {
     width: 90% !important;
+  }
+  .documents-d .doc-options .doc-option {
+    margin: 5px;
+  }
+  .documents-d .doc-options .doc-option img {
+    width: 50px;
+  }
+  .documents-d .doc-options .doc-option h3 {
+    font-size: 1rem;
   }
 }
 @media (max-width: 480px) {
