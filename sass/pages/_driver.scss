@@ -107,10 +107,52 @@ header {
       a {
         margin: 10px;
         display: inline-block;
-        svg {
-          width: 20px;
-          filter: brightness(0) invert(1);
+        color: white;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+.user-driver {
+  margin: 40px auto;
+  @include flex(center, center);
+  flex-direction: column;
+  .user-boxes {
+    @include flex(center, center);
+    flex-wrap: wrap;
+    margin: 20px;
+    .user-box {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      width: 350px;
+      height: 350px;
+      border: 1px solid #7777;
+      border-radius: 20px;
+      padding: 30px 10px;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
         }
+        p {
+          font-size: 1.3rem;
+          color: #474747;
+          font-weight: 600;
+        }
+      }
+      p{
+        font-size: 1.3rem;
+        color: #454545;
       }
     }
   }
