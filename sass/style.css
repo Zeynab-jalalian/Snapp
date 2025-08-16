@@ -2776,9 +2776,13 @@ header .logo a svg {
   flex-direction: column;
 }
 .benefits-driver h3 {
+  text-align: center;
   font-size: 1.4rem;
   margin: 10px auto;
   color: #474747;
+}
+.benefits-driver h1 {
+  text-align: center;
 }
 .benefits-driver .ben-boxes {
   display: flex;
