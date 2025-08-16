@@ -2872,7 +2872,28 @@ header .logo a svg {
   font-size: 1.3rem;
 }
 .documents-d .doc-contents {
+  width: 60%;
+  margin: auto;
+}
+.documents-d .doc-contents .doc-content {
+  padding: 40px 20px;
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+  border-radius: 15px;
+}
+.documents-d .doc-contents .doc-content h1 {
+  margin-bottom: 10px;
+}
+.documents-d .doc-contents .doc-content p {
+  font-size: 1.4rem;
+  margin: 5px auto;
+  color: #474747;
   display: flex;
+  gap: 5px;
+}
+.documents-d .doc-contents .doc-content p svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {

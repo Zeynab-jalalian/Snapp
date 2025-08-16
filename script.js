@@ -123,3 +123,23 @@ headersD.forEach((header) => {
     }
   });
 });
+// documents
+  const options = document.querySelectorAll(".doc-option");
+  const contents = document.querySelectorAll(".doc-content");
+
+  options.forEach((option, index) => {
+    option.addEventListener("click", () => {
+      
+      options.forEach(opt => opt.classList.remove("active"));
+      contents.forEach(content => content.style.display = "none");
+
+    
+      option.classList.add("active");
+      contents[index].style.display = "block";
+    });
+  });
+
+ 
+  contents.forEach((content, i) => {
+    content.style.display = i === 0 ? "block" : "none";
+  });
