@@ -2702,6 +2702,70 @@ header .logo a svg {
   color: #454545;
 }
 
+.accordion-box-d {
+  padding: 2%;
+}
+.accordion-box-d .accordion-d {
+  max-width: 930px;
+  margin: 20px auto;
+}
+.accordion-box-d .accordion-d h1 {
+  padding: 20px;
+  text-align: center;
+}
+.accordion-box-d .accordion-d .accordion-item-d {
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.accordion-box-d .accordion-d .accordion-item-d .accordion-header-d {
+  border-radius: 20px;
+  color: #333;
+  padding: 20px 16px;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-weight: bold;
+  background: #fff;
+}
+.accordion-box-d .accordion-d .accordion-item-d .accordion-header-d.active {
+  border-radius: 20px 20px 0 0;
+}
+.accordion-box-d .accordion-d .accordion-item-d .accordion-header-d i {
+  transition: transform 0.3s ease;
+}
+.accordion-box-d .accordion-d .accordion-item-d .accordion-header-d.active i {
+  transform: rotate(180deg);
+}
+.accordion-box-d .accordion-d .accordion-item-d .accordion-content-d {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  color: #747474;
+  font-size: 1.3rem;
+  padding: 0 16px;
+  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+}
+.accordion-box-d .accordion-d .accordion-item-d .accordion-content-d p {
+  padding: 12px 0;
+  margin: 0;
+  line-height: 1.6;
+}
+.accordion-box-d .accordion-d .accordion-item-d .accordion-content-d.active {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-radius: 0 0 20px 20px;
+}
+
 header {
   background: #fff;
   position: fixed;

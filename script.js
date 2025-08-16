@@ -82,5 +82,44 @@ headers.forEach((header) => {
 });
 
 
+// accordion 2
 
 
+const headersD = document.querySelectorAll(".accordion-header-d");
+
+headersD.forEach((header) => {
+  header.addEventListener("click", () => {
+    const content = header.nextElementSibling;
+
+   
+    headersD.forEach((otherHeader) => {
+      if (otherHeader !== header) {
+        const otherContent = otherHeader.nextElementSibling;
+        otherHeader.classList.remove("active");
+        otherContent.style.maxHeight = null;
+        otherContent.classList.remove("open");
+      }
+    });
+
+    
+    header.classList.toggle("active");
+
+    if (header.classList.contains("active")) {
+      content.classList.add("open");
+      content.style.maxHeight = content.scrollHeight + "px";
+
+      content.addEventListener("transitionend", function setNone() {
+        if (header.classList.contains("active")) {
+          content.style.maxHeight = "none";
+        }
+        content.removeEventListener("transitionend", setNone);
+      });
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      setTimeout(() => {
+        content.style.maxHeight = null;
+        content.classList.remove("open");
+      }, 10);
+    }
+  });
+});
