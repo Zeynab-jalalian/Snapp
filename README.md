@@ -1,7 +1,7 @@
 # Snapp (+Sass)
 
 #### ![Languages](https://img.shields.io/github/languages/count/zeynab-jalalian/Snapp) :
- - ![Sass](https://img.shields.io/badge/Sass-pink?logo=sass&logoColor=white)
+ - ![Sass](https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=white)
  - ![Javascript](https://img.shields.io/badge/javascript-yellow) 
  - ![HTML](https://img.shields.io/badge/Html-orange)
 
