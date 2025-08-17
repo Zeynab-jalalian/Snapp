@@ -2960,6 +2960,77 @@ header .logo a svg {
   padding: 10px;
 }
 
+.banks-pannel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+.banks-pannel h1 {
+  margin: 5px auto;
+  font-size: 2rem;
+}
+.banks-pannel p {
+  color: #474747;
+  font-size: 1.3rem;
+  margin: 5px auto;
+}
+.banks-pannel .banks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.banks-pannel .banks img {
+  width: 70px;
+  margin: 10px;
+}
+
+.pannel-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.pannel-options .pannel-option {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  max-width: 400px;
+  height: 250px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 30px 10px;
+}
+.pannel-options .pannel-option .p-o-i {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pannel-options .pannel-option .p-o-i img {
+  width: 100px;
+  object-fit: cover;
+}
+.pannel-options .pannel-option .p-o-c {
+  padding: 10px;
+}
+.pannel-options .pannel-option .p-o-c h1 {
+  font-size: 1.5rem;
+  margin: 5px auto;
+}
+.pannel-options .pannel-option .p-o-c p {
+  color: #474747;
+  font-size: 1.2rem;
+}
+
 header {
   background: #fff;
   position: fixed;

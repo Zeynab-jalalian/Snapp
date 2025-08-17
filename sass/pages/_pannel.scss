@@ -2,7 +2,7 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 .home-pannel {
-    padding: 2%;
+  padding: 2%;
   margin-top: 200px;
   @include flex(center, center);
   flex-direction: column;
@@ -25,28 +25,91 @@
     margin: 10px auto;
     padding: 15px 10px;
     border-radius: 10px;
-    background:$snapp-green;
+    background: $snapp-green;
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
   }
-  .video{
+  .video {
     border-radius: 10px;
     max-width: 700px;
     margin: 20px auto;
     height: 100%;
     background: $snapp-green;
     padding: 10px;
-    video{
-        width: 90%;
-        height: 100%;
-        border-radius: 10px;
+    video {
+      width: 90%;
+      height: 100%;
+      border-radius: 10px;
     }
-    h3{
-        color: $white;
-        font-size: 1.4rem;
-        text-align: center;
-        padding: 10px;
+    h3 {
+      color: $white;
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+}
+.banks-pannel {
+  @include flex(center, center);
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+  h1 {
+    margin: 5px auto;
+    font-size: 2rem;
+  }
+  p {
+    color: #474747;
+    font-size: 1.3rem;
+    margin: 5px auto;
+  }
+  .banks {
+    @include flex(center, center);
+    margin: 10px;
+    img {
+      width: 70px;
+      margin: 10px;
+    }
+  }
+}
+.pannel-options {
+  @include flex(center, center);
+  flex-wrap: wrap;
+  margin: 20px;
+  .pannel-option {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 400px;
+    height: 250px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 30px 10px;
+    .p-o-i {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100px;
+        object-fit: cover;
+      }
+    }
+    .p-o-c {
+      padding: 10px;
+      h1 {
+        font-size: 1.5rem;
+        margin: 5px auto;
+      }
+      p {
+        color: #474747;
+        font-size: 1.2rem;
+      }
     }
   }
 }
