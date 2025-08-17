@@ -616,6 +616,28 @@ a {
   color: #333;
 }
 
+.footer-me {
+  width: 100%;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-me a {
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+  margin-left: 4px;
+}
+.footer-me a:hover {
+  text-decoration: underline;
+}
+
 .btn-home-taxi {
   margin-top: 70px !important;
 }
