@@ -62,7 +62,6 @@
     }
     .btn-home {
       margin-top: 30px;
-      width: 100%;
       background: transparent;
       outline: none;
       color: white;
@@ -73,6 +72,11 @@
       border-radius: 5px;
       cursor: pointer;
       transition: 0.3s;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px auto;
 
       &:hover {
         background: rgba(255, 255, 255, 0.1);
@@ -338,14 +342,14 @@
   color: #fff;
 
   background: rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(8px); 
+  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 
   a {
     color: #fff;
-    font-weight: 900; 
+    font-weight: 900;
     text-decoration: none;
     margin-left: 4px;
 

@@ -161,6 +161,7 @@
   header {
     position: fixed;
     justify-content: space-between;
+    padding: 20px;
   }
   .menu-toggle {
     display: flex !important;
@@ -310,6 +311,9 @@
   }
   .home-pannel{
     margin-top: 70px;
+  }
+  .badges{
+    display: none;
   }
 }
 @media (max-width: 840px) {
