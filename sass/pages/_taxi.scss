@@ -243,6 +243,7 @@
 
   .accordion {
     max-width: 930px;
+    width: 100%;
     margin: 20px auto;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -332,7 +333,35 @@
           padding-top: 20px;
           padding-bottom: 25px;
           border-radius: 0 0 20px 20px;
-          max-height: 1000px; // مقدار زیاد برای اطمینان از باز شدن کامل
+          max-height: 1000px; // باز شدن کامل
+        }
+      }
+    }
+
+    // Responsive for smaller screens
+    @media (max-width: 960px) {
+      max-width: 100%;
+      margin: 10px 0;
+      border-radius: 0;
+
+      .accordion-item {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 8px;
+
+        .accordion-header {
+          border-radius: 0;
+          padding: 16px 15px;
+        }
+
+        .accordion-content {
+          padding: 0 15px;
+
+          &.active {
+            border-radius: 0 0 15px 15px;
+            padding-bottom: 20px;
+          }
         }
       }
     }

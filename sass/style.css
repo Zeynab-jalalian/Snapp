@@ -871,6 +871,7 @@ a {
 }
 .accordion-box .accordion {
   max-width: 930px;
+  width: 100%;
   margin: 20px auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -952,6 +953,30 @@ a {
   padding-bottom: 25px;
   border-radius: 0 0 20px 20px;
   max-height: 1000px;
+}
+@media (max-width: 960px) {
+  .accordion-box .accordion {
+    max-width: 100%;
+    margin: 10px 0;
+    border-radius: 0;
+  }
+  .accordion-box .accordion .accordion-item {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 8px;
+  }
+  .accordion-box .accordion .accordion-item .accordion-header {
+    border-radius: 0;
+    padding: 16px 15px;
+  }
+  .accordion-box .accordion .accordion-item .accordion-content {
+    padding: 0 15px;
+  }
+  .accordion-box .accordion .accordion-item .accordion-content.active {
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 20px;
+  }
 }
 
 .bike-home-btn {
