@@ -237,26 +237,43 @@
 }
 .accordion-box {
   padding: 2%;
-  background-color:#ebecf2;
+  background-color: #ebecf2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+
   .accordion {
     max-width: 930px;
     margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: #fff;
 
-    h1{
-      padding: 20px;
+    h1 {
+      padding: 20px 30px;
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #222;
+      border-bottom: 2px solid #ddd;
     }
 
-
     .accordion-item {
-      border-radius: 20px;
+      border-radius: 0 0 20px 20px;
       margin-bottom: 10px;
       overflow: hidden;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+      transition: box-shadow 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
 
       .accordion-header {
         background: #f7f7f7;
         border-radius: 20px;
         color: #333;
-        padding: 20px 16px;
+        padding: 18px 20px;
         font-size: 1.3rem;
         border: none;
         outline: none;
@@ -266,18 +283,31 @@
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
-        transition: background 0.2s ease;
-        font-weight: bold;
+        transition: background 0.3s ease, color 0.3s ease;
+        font-weight: 700;
 
-        &.active{
-          border-radius: 20px 20px 0 0 ;
+        &:hover {
+          background-color: #e0e0e0;
+          color: #000;
         }
+
+        &.active {
+          border-radius: 20px 20px 0 0;
+          background-color: #e9ebf0;
+          color: #000;
+        }
+
         i {
           transition: transform 0.3s ease;
+          font-size: 1.2rem;
+          color: #666;
+          flex-shrink: 0;
+          margin-left: 10px;
         }
 
         &.active i {
           transform: rotate(180deg);
+          color: #007bff;
         }
       }
 
@@ -285,24 +315,27 @@
         max-height: 0;
         overflow: hidden;
         background: #f7f7f7;
-        color: #747474;
-        font-size: 1.3rem;
-        padding: 0 16px;
+        color: #555;
+        font-size: 1.25rem;
+        padding: 0 20px;
+        line-height: 1.6;
         transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
           padding 0.3s ease;
 
-        p {
+        p, span {
           padding: 12px 0;
           margin: 0;
-          line-height: 1.6;
+          display: block;
         }
 
         &.active {
-         padding-top: 20px;
-         padding-bottom: 30px;
-         border-radius: 0 0 20px 20px;
+          padding-top: 20px;
+          padding-bottom: 25px;
+          border-radius: 0 0 20px 20px;
+          max-height: 1000px; // مقدار زیاد برای اطمینان از باز شدن کامل
         }
       }
     }
   }
 }
+
